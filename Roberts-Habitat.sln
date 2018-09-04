@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{7F387A11-DF0D-4C80-B528-5ABE82D048D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{C1A2A3D2-F2DC-42B7-9993-D28F897B818F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{E61FA46A-2E35-4C66-B79B-F97F02DBD87A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Project.Website", "src\Project\code\Sitecore.Project.Website.csproj", "{2461BBE0-B20A-4DD9-AAE4-8F711412F950}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2461BBE0-B20A-4DD9-AAE4-8F711412F950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2461BBE0-B20A-4DD9-AAE4-8F711412F950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2461BBE0-B20A-4DD9-AAE4-8F711412F950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2461BBE0-B20A-4DD9-AAE4-8F711412F950}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2461BBE0-B20A-4DD9-AAE4-8F711412F950} = {7F387A11-DF0D-4C80-B528-5ABE82D048D5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF97D5C7-8A98-4EF6-9557-DA282F8801D8}
+	EndGlobalSection
+EndGlobal
