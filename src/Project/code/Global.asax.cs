@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace Sitecore.Project.Website
 {
-    public class MvcApplication : System.Web.HttpApplication
+    public class MvcApplication : Web.Application
     {
         protected void Application_Start()
         {

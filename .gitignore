@@ -34,3 +34,4 @@ Deploy/*
 package-lock.json
 *.eml
 .idea/
+**/*.example
