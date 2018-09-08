@@ -142,13 +142,15 @@
     <Content Include="Views\web.config" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.Startup.config" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.ControlPanel.config" />
-    <Content Include="App_Config\Include\Synthesis\Synthesis.config" />
+    <Content Include="App_Config\Include\Synthesis\Synthesis.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\Synthesis\Synthesis.AutoRegenerate.config" />
     <Content Include="App_Config\ConnectionStrings.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\TeamCity.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
