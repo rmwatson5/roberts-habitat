@@ -1,0 +1,31 @@
+{
+  "name": "roberts-habitat",
+  "version": "1.0.0",
+  "description": "Roberts Habitat Node Dependencies",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-nuget-restore": "^0.4.0",
+    "gulp-sass": "^4.0.1",
+    "node-bourbon": "^4.2.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmwatson5/roberts-habitat"
+  },
+  "author": "Robert Watson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmwatson5/roberts-habitat/issues"
+  },
+  "homepage": "https://github.com/rmwatson5/roberts-habitat#readme"
+}
