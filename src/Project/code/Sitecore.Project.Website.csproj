@@ -147,6 +147,9 @@
     <Reference Include="Unicorn, Version=4.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Unicorn.Core.4.0.4\lib\net452\Unicorn.dll</HintPath>
     </Reference>
+    <Reference Include="Unicorn.Roles, Version=4.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unicorn.Roles.Core.4.0.4\lib\net452\Unicorn.Roles.dll</HintPath>
+    </Reference>
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
     </Reference>
@@ -157,7 +160,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -192,11 +197,18 @@
     <None Include="App_Config\ConnectionStrings.Debug.config">
       <DependentUpon>ConnectionStrings.config</DependentUpon>
       <IsTransformFile>true</IsTransformFile>
+      <SubType>Designer</SubType>
     </None>
     <None Include="App_Config\ConnectionStrings.Release.config">
       <DependentUpon>ConnectionStrings.config</DependentUpon>
       <IsTransformFile>true</IsTransformFile>
     </None>
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Helix.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Serialization.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.DataProvider.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.Roles.config.example" />
+    <Content Include="App_Config\Include\Project\DevSettings.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -213,6 +225,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Config\Include\Feature\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
