@@ -1,0 +1,50 @@
+﻿---
+ID: "deeeb4f2-769b-46f9-ad21-d4decf625e25"
+Parent: "fe98fa96-b717-4d81-9f09-c7255ee07023"
+Template: "fe98fa96-b717-4d81-9f09-c7255ee07023"
+Path: /sitecore/templates/Feature/PageContent/_Base Site Root/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{5BE221A1-4BF0-491F-BD98-C53B3ABFD754}"
+- ID: "3461d229-285d-495c-9919-1f4c135461a1"
+  Hint: On
+  Type: Checkbox
+  Value: 1
+- ID: "5a1af457-8706-4685-8545-53e632c74b0c"
+  Hint: Allow Debug
+  Type: Checkbox
+  Value: 1
+- ID: "811b6963-3e37-46b2-b7ee-99ed0adc4359"
+  Hint: Scheme
+  Value: http
+- ID: "9ec8b9d9-29de-4939-9757-feb155304979"
+  Hint: Enable Preview
+  Type: Checkbox
+  Value: 1
+- ID: "b8b3cb32-4c04-4073-887e-4b5e11eaec80"
+  Hint: Target Host Name
+  Value: $name.com
+- ID: "d21c5beb-ff61-4f0a-99e4-019f0a429113"
+  Hint: Browser Title
+  Value: www.sitecore.net
+- ID: "e04d9034-4d40-46ea-a63d-dd6ad65052e6"
+  Hint: Domain
+  Value: $name
+- ID: "f80a2ada-7d2a-4d79-b5fd-aba251d02c5e"
+  Hint: Additional Attributes
+  Value: 
+- ID: "fc19d520-9e22-4fe2-a55e-45bb33fb4a6d"
+  Hint: Enable Workflow
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180912T162654Z

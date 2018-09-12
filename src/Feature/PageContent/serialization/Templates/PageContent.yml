@@ -1,0 +1,13 @@
+﻿---
+ID: "065730c8-b9e9-490c-8c88-e4258ce32efe"
+Parent: "1ec62f45-2f77-4515-92d6-215ef7501867"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Feature/PageContent
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Value: "20180912T162614:636723663742449018Z"

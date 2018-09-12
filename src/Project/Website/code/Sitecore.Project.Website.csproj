@@ -75,6 +75,12 @@
     <Reference Include="Sitecore.Analytics.RobotDetection, Version=11.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Analytics.RobotDetection.NoReferences.9.0.180604\lib\NET462\Sitecore.Analytics.RobotDetection.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.NoReferences.9.0.180604\lib\NET462\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.Linq.NoReferences.9.0.180604\lib\NET462\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.ExperienceEditor.Speak, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.ExperienceEditor.Speak.NoReferences.9.0.180604\lib\NET462\Sitecore.ExperienceEditor.Speak.dll</HintPath>
     </Reference>
@@ -228,6 +234,9 @@
     <Content Include="App_Config\Include\Project\Project.Website.Serialization.config" />
     <Content Include="App_Config\Include\zzz\Foundation.DataAccess.config" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.LocalConfig.config" />
+    <Content Include="App_Config\Include\Feature\Feature.PageContent.Serialization.config" />
+    <Content Include="App_Config\Include\Project\Project.Website.config" />
+    <Content Include="App_Config\Include\Feature\Feature.PageContent.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -249,6 +258,14 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Feature\Navigation\code\Sitecore.Feature.Navigation.csproj">
+      <Project>{69d1f520-5429-48ba-afc1-5e508eaeb31a}</Project>
+      <Name>Sitecore.Feature.Navigation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Feature\PageContent\code\Sitecore.Feature.PageContent.csproj">
+      <Project>{87451572-67ef-4bd4-8550-d9e6a367dd0b}</Project>
+      <Name>Sitecore.Feature.PageContent</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\DataAccess\code\Sitecore.Foundation.DataAccess.csproj">
       <Project>{b8774fcb-4c23-432e-a90b-5d4704743ce4}</Project>
       <Name>Sitecore.Foundation.DataAccess</Name>
