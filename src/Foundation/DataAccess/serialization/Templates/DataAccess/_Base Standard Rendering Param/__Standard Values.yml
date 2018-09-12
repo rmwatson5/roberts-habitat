@@ -1,0 +1,14 @@
+﻿---
+ID: "de583d96-d634-4619-9ce4-0b354a56956c"
+Parent: "c7705ca8-0834-4ecc-a97f-732756c9449c"
+Template: "c7705ca8-0834-4ecc-a97f-732756c9449c"
+Path: /sitecore/templates/Foundation/DataAccess/_Base Standard Rendering Parameters/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180910T235216Z

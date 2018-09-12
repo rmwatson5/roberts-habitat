@@ -1,0 +1,14 @@
+﻿---
+ID: "18e2e79c-86c7-44c6-995a-0ac538598ae6"
+Parent: "ebb60f61-cc55-4107-8d70-53e347ba2b3d"
+Template: "ebb60f61-cc55-4107-8d70-53e347ba2b3d"
+Path: /sitecore/templates/Feature/Navigation/Link Menu Item/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180912T000343Z
