@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const bourbon = require('node-bourbon');
 const imagemin = require('gulp-imagemin');
 const babel = require('gulp-babel');
+const ejs = require("gulp-ejs");
 const fs = require('fs');
 
 let config;
@@ -16,13 +17,15 @@ else {
 // FED Paths
 const FED_ASSETS = "./FED";
 const FED_PATHS = {
+	FED_TEMPLATES_SRC: [FED_ASSETS + '/templates/*.ejs', FED_ASSETS + '/templates/**/*.ejs'],
     FED_SASS_SRC: [FED_ASSETS + '/sass/**/*.scss'],
     FED_JS_SRC: [FED_ASSETS + '/js/**/*.js', '!' + FED_ASSETS + '/js/vendor/**/*', '!' + FED_ASSETS + '/js/json/**/*'],
     FED_JSON_SRC: [FED_ASSETS + '/js/json/**/*'],
     FED_JS_VENDOR_SRC: [FED_ASSETS + '/js/vendor/*.js'],
-    FED_SASS_DEST: FED_ASSETS + '/css/',
     FED_SPEAK_SRC: [FED_ASSETS + '/client/**/*.*'],
-    FED_IMAGES_SRC: ['./FED/img/**/*']
+    FED_IMAGES_SRC: ['./FED/img/**/*'],
+	FED_SASS_DEST: FED_ASSETS + '/css/',
+	FED_TEMPLATES_DEST: FED_ASSETS + '/html'
 };
 
 // BED Paths
@@ -34,6 +37,12 @@ const BED_PATHS = {
     BED_RAZOR_SITE_DEST: config.websiteRoot,
     BED_SPEAK_SITE_DEST: config.websiteRoot + "/sitecore/shell/client/"
 };
+
+gulp.task('templateBuild', function () {
+	gulp.src(FED_PATHS.FED_TEMPLATES_SRC)
+    .pipe(ejs({ msg: 'Compiling ejs templates'}, {}, { ext: '.html' }))
+    .pipe(gulp.dest(FED_PATHS.FED_TEMPLATES_DEST));
+});
 
 gulp.task('sassBuild', function () {
     const task = gulp.src(FED_PATHS.FED_SASS_SRC)
@@ -79,6 +88,7 @@ gulp.task('razorBuild', function () {
 
 gulp.task('fedWatch', function () {
     gulp.watch(FED_PATHS.FED_SASS_SRC, ['sassBuild']);
+	gulp.watch(FED_PATHS.FED_TEMPLATES_SRC, ['templateBuild']);
     return false;
 });
 
@@ -92,5 +102,5 @@ gulp.task('bedWatch', function () {
 
 // default build task. this gets called when the user calls 'gulp'
 gulp.task('image', ['imagesBuild']);
-gulp.task('fed', ['fedWatch', 'sassBuild']);
+gulp.task('fed', ['fedWatch', 'sassBuild', 'templateBuild']);
 gulp.task('bed', ['bedWatch', 'sassBuild', 'jsBuild', 'razorBuild', 'speakBuild']);

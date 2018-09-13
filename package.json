@@ -10,6 +10,7 @@
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
+    "gulp-ejs": "^3.2.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-nuget-restore": "^0.4.0",
     "gulp-sass": "^4.0.1",
