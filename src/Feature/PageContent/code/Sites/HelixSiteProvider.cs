@@ -46,7 +46,7 @@ namespace Sitecore.Feature.PageContent.Sites
             siteProperties.TryAdd("domain", siteRoot.Domain.RawValue);
             siteProperties.TryAdd("allowDebug", siteRoot.AllowDebug.Value.ToString().ToLower());
             siteProperties.TryAdd("enablePreview", siteRoot.EnablePreview.Value.ToString().ToLower());
-            //siteProperties.TryAdd("mode", siteRoot.On.GetOnValue());
+            siteProperties.TryAdd("mode", siteRoot.On.GetOnValue());
             siteProperties.TryAdd("scheme", siteRoot.Scheme.RawValue);
             siteProperties.TryAdd("requireLogin", siteRoot.RequireLogin.Value.ToString().ToLower());
             siteProperties.TryAdd("enableWorkflow", siteRoot.EnableWorkflow.Value.ToString().ToLower());

@@ -1,0 +1,22 @@
+﻿@helper BuildCacheBusterVariable(string fileName)
+{
+    var filePath = Server.MapPath(fileName);
+    var updateDate = File.GetLastWriteTimeUtc(filePath);
+    <script type="text/javascript">
+        var cacheBuster = @(updateDate.Ticks)
+    </script>
+}
+
+@helper AddJsWithCacheBuster(string fileName)
+{
+    var filePath = Server.MapPath(fileName);
+    var updateDate = File.GetLastWriteTimeUtc(filePath);
+    <script src="@(fileName)?bust=@(updateDate.Ticks)"></script>
+}
+
+@helper AddCssWithCacheBuster(string fileName)
+{
+    var filePath = Server.MapPath(fileName);
+    var updateDate = File.GetLastWriteTimeUtc(filePath);
+	<link rel="stylesheet" href="@(fileName)?bust=@(updateDate.Ticks)"/>
+}

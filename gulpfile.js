@@ -14,7 +14,7 @@ else {
 }
 
 // FED Paths
-const FED_ASSETS = "./FED/assets";
+const FED_ASSETS = "./FED";
 const FED_PATHS = {
     FED_SASS_SRC: [FED_ASSETS + '/sass/**/*.scss'],
     FED_JS_SRC: [FED_ASSETS + '/js/**/*.js', '!' + FED_ASSETS + '/js/vendor/**/*', '!' + FED_ASSETS + '/js/json/**/*'],

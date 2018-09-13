@@ -207,6 +207,8 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
+    <Content Include="App_Code\CacheBuster.cshtml" />
+    <Content Include="App_Code\web.config" />
     <None Include="App_Config\ConnectionStrings.Debug.config">
       <DependentUpon>ConnectionStrings.config</DependentUpon>
       <IsTransformFile>true</IsTransformFile>
@@ -256,6 +258,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Navigation\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Feature\Navigation\code\Sitecore.Feature.Navigation.csproj">
