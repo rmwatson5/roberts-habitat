@@ -35,3 +35,5 @@ package-lock.json
 *.eml
 .idea/
 **/*.example
+FED/html/**/*
+FED/html/*
