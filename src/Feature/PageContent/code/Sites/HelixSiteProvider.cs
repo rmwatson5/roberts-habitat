@@ -9,7 +9,7 @@ using Synthesis;
 
 namespace Sitecore.Feature.PageContent.Sites
 {
-    public class HelixSiteProvider : SiteProvider
+    public class HelixSiteProvider : SitecoreSiteProvider
     {
         private const string SitesPath = "/sitecore/content/sites";
         protected Dictionary<string, Site> Sites = new Dictionary<string, Site>();
@@ -17,17 +17,22 @@ namespace Sitecore.Feature.PageContent.Sites
         public override Site GetSite(string siteName)
         {
             Assert.ArgumentNotNullOrEmpty(siteName, nameof(siteName));
-            return !this.Sites.TryGetValue(siteName, out var site) ? null : site;
+            return !this.Sites.TryGetValue(siteName, out var site) ? base.GetSite(siteName) : site;
         }
 
         public override SiteCollection GetSites()
         {
-            var database = Context.Database ?? Database.GetDatabase("web");
             var siteCollection = new SiteCollection();
+            var database = Context.Database ?? Database.GetDatabase("web");
             var sitesFolder = database.GetItem(SitesPath);
             var siteRoots = sitesFolder?.Children.AsStronglyTypedCollectionOf<I_BaseSiteRootItem>().Where(bsr => bsr != null);
             var sites = siteRoots?.Select(this.GetSite);
-            siteCollection.AddRange(sites);
+            if (sites != null)
+            {
+                siteCollection.AddRange(sites);
+            }
+            
+            siteCollection.AddRange(base.GetSites());
             return siteCollection;
         }
 
@@ -57,7 +62,11 @@ namespace Sitecore.Feature.PageContent.Sites
 
 
             var site = new Site(siteName, siteProperties);
-            this.Sites.Add(siteName, site);
+            if (!this.Sites.ContainsKey(siteName))
+            {
+                this.Sites.Add(siteName, site);
+            }
+            
             return site;
         }
     }
