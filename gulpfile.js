@@ -17,6 +17,7 @@ else {
 // FED Paths
 const FED_ASSETS = "./FED";
 const FED_PATHS = {
+	FED_FONTS_SRC: [FED_ASSETS + '/fonts/*.*'],
 	FED_TEMPLATES_SRC: [FED_ASSETS + '/templates/*.ejs', FED_ASSETS + '/templates/**/*.ejs'],
     FED_SASS_SRC: [FED_ASSETS + '/sass/**/*.scss'],
     FED_JS_SRC: [FED_ASSETS + '/js/**/*.js', '!' + FED_ASSETS + '/js/vendor/**/*', '!' + FED_ASSETS + '/js/json/**/*'],
@@ -35,13 +36,16 @@ const BED_PATHS = {
     BED_SASS_SITE_DEST: config.websiteRoot + '/css/',
     BED_JS_SITE_DEST: config.websiteRoot + '/js/',
     BED_RAZOR_SITE_DEST: config.websiteRoot,
-    BED_SPEAK_SITE_DEST: config.websiteRoot + "/sitecore/shell/client/"
+    BED_SPEAK_SITE_DEST: config.websiteRoot + "/sitecore/shell/client/",
+    BED_FONTS_SITE_DEST: config.websiteRoot + '/fonts/'
 };
 
 gulp.task('templateBuild', function () {
-	gulp.src(FED_PATHS.FED_TEMPLATES_SRC)
+	const task = gulp.src(FED_PATHS.FED_TEMPLATES_SRC)
     .pipe(ejs({ msg: 'Compiling ejs templates'}, {}, { ext: '.html' }))
     .pipe(gulp.dest(FED_PATHS.FED_TEMPLATES_DEST));
+
+	return task;
 });
 
 gulp.task('sassBuild', function () {
@@ -58,6 +62,13 @@ gulp.task('sassBuild', function () {
     }
 
     return task;
+});
+
+gulp.task('fontBuild', function () {
+	const task = gulp.src(FED_PATHS.FED_FONTS_SRC)
+	   .pipe(gulp.dest(BED_PATHS.BED_FONTS_SITE_DEST));
+
+	return task;
 });
 
 // minifies js files
@@ -103,4 +114,4 @@ gulp.task('bedWatch', function () {
 // default build task. this gets called when the user calls 'gulp'
 gulp.task('image', ['imagesBuild']);
 gulp.task('fed', ['fedWatch', 'sassBuild', 'templateBuild']);
-gulp.task('bed', ['bedWatch', 'sassBuild', 'jsBuild', 'razorBuild', 'speakBuild']);
+gulp.task('bed', ['bedWatch', 'sassBuild', 'jsBuild', 'razorBuild', 'speakBuild', 'fontBuild']);

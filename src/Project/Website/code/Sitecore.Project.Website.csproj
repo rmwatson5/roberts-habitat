@@ -217,6 +217,7 @@
     <None Include="App_Config\ConnectionStrings.Release.config">
       <DependentUpon>ConnectionStrings.config</DependentUpon>
       <IsTransformFile>true</IsTransformFile>
+      <SubType>Designer</SubType>
     </None>
     <Content Include="App_Config\Include\Unicorn\Unicorn.Helix.config">
       <SubType>Designer</SubType>
@@ -246,6 +247,7 @@
     <None Include="Properties\PublishProfiles\TeamCity.pubxml" />
     <Content Include="Views\Layouts\Default.cshtml" />
     <Content Include="Views\Frames\HeaderTop.cshtml" />
+    <Content Include="Views\Navigation\NavigationLinks.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -258,7 +260,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Navigation\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Feature\Navigation\code\Sitecore.Feature.Navigation.csproj">

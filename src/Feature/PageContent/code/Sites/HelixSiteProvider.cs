@@ -25,8 +25,8 @@ namespace Sitecore.Feature.PageContent.Sites
             var database = Context.Database ?? Database.GetDatabase("web");
             var siteCollection = new SiteCollection();
             var sitesFolder = database.GetItem(SitesPath);
-            var siteRoots = sitesFolder.Children.AsStronglyTypedCollectionOf<I_BaseSiteRootItem>().Where(bsr => bsr != null);
-            var sites = siteRoots.Select(this.GetSite);
+            var siteRoots = sitesFolder?.Children.AsStronglyTypedCollectionOf<I_BaseSiteRootItem>().Where(bsr => bsr != null);
+            var sites = siteRoots?.Select(this.GetSite);
             siteCollection.AddRange(sites);
             return siteCollection;
         }
