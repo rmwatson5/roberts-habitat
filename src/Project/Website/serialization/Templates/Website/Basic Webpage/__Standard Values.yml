@@ -5,6 +5,10 @@ Template: "27c9e067-9fb2-438e-a695-8718703aec5e"
 Path: /sitecore/templates/Project/Website/Basic Webpage/__Standard Values
 DB: master
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{24A091BD-0F15-469E-88FC-385A521BA3EA}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -12,7 +16,24 @@ SharedFields:
     <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        l="{B62A3CE4-30A5-48EA-95AE-74809CE164FC}" />
+        l="{B62A3CE4-30A5-48EA-95AE-74809CE164FC}">
+        <r
+          id="{F3DAB19A-7F0C-450C-A2E8-6F1FCC0087CB}"
+          ph="header-top"
+          uid="{6AF293C1-2480-48FD-B6F9-5A6A83E1154F}" />
+        <r
+          ds="{FEE7C6F1-54EF-4E0F-AEB4-0A8A4444BB47}"
+          id="{A11DEA32-F163-404B-8E19-C35ED069CE50}"
+          par=""
+          ph="left-header-top"
+          uid="{354FEA45-2DFD-4DD6-A7A5-58218A46703A}" />
+        <r
+          ds="{DC2A16B9-3611-4386-AC35-498BBFE01919}"
+          id="{A11DEA32-F163-404B-8E19-C35ED069CE50}"
+          par=""
+          ph="right-header-top"
+          uid="{CD7E06D0-4F38-4423-ADB7-285E3183BC3C}" />
+      </d>
     </r>
 Languages:
 - Language: en

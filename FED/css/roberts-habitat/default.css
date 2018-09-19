@@ -121,123 +121,94 @@
 }
 
 /*!
- * Font Awesome Free 5.0.6 by @fontawesome - http://fontawesome.com
- * License - http://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-/* line 4, FED/sass/vendor/bower_components/font-awesome/scss/_core.scss */
-.fa,
-.fas,
-.far,
-.fal,
-.fab {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
   font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
 }
 
+/* line 4, FED/sass/vendor/bower_components/font-awesome/scss/_core.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
 /* line 5, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
-  vertical-align: -.0667em;
+  vertical-align: -15%;
 }
 
-/* line 11, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
-.fa-xs {
-  font-size: .75em;
-}
-
-/* line 15, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
-.fa-sm {
-  font-size: .875em;
-}
-
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
-.fa-1x {
-  font-size: 1em;
-}
-
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
+/* line 10, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
 .fa-2x {
   font-size: 2em;
 }
 
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
+/* line 11, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
 .fa-3x {
   font-size: 3em;
 }
 
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
+/* line 12, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
 .fa-4x {
   font-size: 4em;
 }
 
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
+/* line 13, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
 .fa-5x {
   font-size: 5em;
 }
 
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
-.fa-6x {
-  font-size: 6em;
-}
-
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
-.fa-7x {
-  font-size: 7em;
-}
-
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
-.fa-8x {
-  font-size: 8em;
-}
-
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
-.fa-9x {
-  font-size: 9em;
-}
-
-/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_larger.scss */
-.fa-10x {
-  font-size: 10em;
-}
-
 /* line 3, FED/sass/vendor/bower_components/font-awesome/scss/_fixed-width.scss */
 .fa-fw {
+  width: 1.28571em;
   text-align: center;
-  width: 1.25em;
 }
 
 /* line 4, FED/sass/vendor/bower_components/font-awesome/scss/_list.scss */
 .fa-ul {
-  list-style-type: none;
-  margin-left: 2.5em;
   padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none;
 }
 
-/* line 9, FED/sass/vendor/bower_components/font-awesome/scss/_list.scss */
+/* line 8, FED/sass/vendor/bower_components/font-awesome/scss/_list.scss */
 .fa-ul > li {
   position: relative;
 }
 
-/* line 12, FED/sass/vendor/bower_components/font-awesome/scss/_list.scss */
+/* line 10, FED/sass/vendor/bower_components/font-awesome/scss/_list.scss */
 .fa-li {
-  left: -2em;
   position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
   text-align: center;
-  width: 2em;
-  line-height: inherit;
+}
+
+/* line 16, FED/sass/vendor/bower_components/font-awesome/scss/_list.scss */
+.fa-li.fa-lg {
+  left: -1.85714em;
 }
 
 /* line 4, FED/sass/vendor/bower_components/font-awesome/scss/_bordered-pulled.scss */
 .fa-border {
+  padding: .2em .25em .15em;
   border: solid 0.08em #eee;
   border-radius: .1em;
-  padding: .2em .25em .15em;
 }
 
 /* line 10, FED/sass/vendor/bower_components/font-awesome/scss/_bordered-pulled.scss */
@@ -250,80 +221,112 @@
   float: right;
 }
 
-/* line 18, FED/sass/vendor/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.fa.fa-pull-left,
-.fas.fa-pull-left,
-.far.fa-pull-left,
-.fal.fa-pull-left,
-.fab.fa-pull-left {
+/* line 14, FED/sass/vendor/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.fa.fa-pull-left {
   margin-right: .3em;
 }
 
+/* line 15, FED/sass/vendor/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+
+/* Deprecated as of 4.4.0 */
 /* line 19, FED/sass/vendor/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.fa.fa-pull-right,
-.fas.fa-pull-right,
-.far.fa-pull-right,
-.fal.fa-pull-right,
-.fab.fa-pull-right {
+.pull-right {
+  float: right;
+}
+
+/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 23, FED/sass/vendor/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+
+/* line 24, FED/sass/vendor/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.fa.pull-right {
   margin-left: .3em;
 }
 
 /* line 4, FED/sass/vendor/bower_components/font-awesome/scss/_animated.scss */
 .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 
-/* line 8, FED/sass/vendor/bower_components/font-awesome/scss/_animated.scss */
+/* line 9, FED/sass/vendor/bower_components/font-awesome/scss/_animated.scss */
 .fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }
 
 @keyframes fa-spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
 /* line 4, FED/sass/vendor/bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 /* line 5, FED/sass/vendor/bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 /* line 6, FED/sass/vendor/bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
 /* line 8, FED/sass/vendor/bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
 /* line 9, FED/sass/vendor/bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 
-/* line 10, FED/sass/vendor/bower_components/font-awesome/scss/_rotated-flipped.scss */
-.fa-flip-horizontal.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  transform: scale(-1, -1);
-}
-
-/* line 16, FED/sass/vendor/bower_components/font-awesome/scss/_rotated-flipped.scss */
+/* line 14, FED/sass/vendor/bower_components/font-awesome/scss/_rotated-flipped.scss */
 :root .fa-rotate-90,
 :root .fa-rotate-180,
 :root .fa-rotate-270,
@@ -334,4125 +337,3051 @@
 
 /* line 4, FED/sass/vendor/bower_components/font-awesome/scss/_stacked.scss */
 .fa-stack {
+  position: relative;
   display: inline-block;
+  width: 2em;
   height: 2em;
   line-height: 2em;
-  position: relative;
   vertical-align: middle;
-  width: 2em;
 }
 
-/* line 13, FED/sass/vendor/bower_components/font-awesome/scss/_stacked.scss */
-.fa-stack-1x,
-.fa-stack-2x {
-  left: 0;
+/* line 12, FED/sass/vendor/bower_components/font-awesome/scss/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
   position: absolute;
-  text-align: center;
+  left: 0;
   width: 100%;
+  text-align: center;
 }
 
-/* line 21, FED/sass/vendor/bower_components/font-awesome/scss/_stacked.scss */
+/* line 18, FED/sass/vendor/bower_components/font-awesome/scss/_stacked.scss */
 .fa-stack-1x {
   line-height: inherit;
 }
 
-/* line 25, FED/sass/vendor/bower_components/font-awesome/scss/_stacked.scss */
+/* line 19, FED/sass/vendor/bower_components/font-awesome/scss/_stacked.scss */
 .fa-stack-2x {
   font-size: 2em;
 }
 
-/* line 29, FED/sass/vendor/bower_components/font-awesome/scss/_stacked.scss */
+/* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_stacked.scss */
 .fa-inverse {
   color: #fff;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-readers do not read off random characters that represent icons */
+   readers do not read off random characters that represent icons */
 /* line 4, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-500px:before {
-  content: "\f26e";
+.fa-glass:before {
+  content: "";
 }
 
 /* line 5, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-accessible-icon:before {
-  content: "\f368";
+.fa-music:before {
+  content: "";
 }
 
 /* line 6, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-accusoft:before {
-  content: "\f369";
+.fa-search:before {
+  content: "";
 }
 
 /* line 7, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-address-book:before {
-  content: "\f2b9";
+.fa-envelope-o:before {
+  content: "";
 }
 
 /* line 8, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-address-card:before {
-  content: "\f2bb";
+.fa-heart:before {
+  content: "";
 }
 
 /* line 9, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-adjust:before {
-  content: "\f042";
+.fa-star:before {
+  content: "";
 }
 
 /* line 10, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-adn:before {
-  content: "\f170";
+.fa-star-o:before {
+  content: "";
 }
 
 /* line 11, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-adversal:before {
-  content: "\f36a";
+.fa-user:before {
+  content: "";
 }
 
 /* line 12, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-affiliatetheme:before {
-  content: "\f36b";
+.fa-film:before {
+  content: "";
 }
 
 /* line 13, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-algolia:before {
-  content: "\f36c";
+.fa-th-large:before {
+  content: "";
 }
 
 /* line 14, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-align-center:before {
-  content: "\f037";
+.fa-th:before {
+  content: "";
 }
 
 /* line 15, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-align-justify:before {
-  content: "\f039";
+.fa-th-list:before {
+  content: "";
 }
 
 /* line 16, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-align-left:before {
-  content: "\f036";
+.fa-check:before {
+  content: "";
 }
 
 /* line 17, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-align-right:before {
-  content: "\f038";
-}
-
-/* line 18, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-amazon:before {
-  content: "\f270";
-}
-
-/* line 19, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-amazon-pay:before {
-  content: "\f42c";
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "";
 }
 
 /* line 20, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ambulance:before {
-  content: "\f0f9";
+.fa-search-plus:before {
+  content: "";
 }
 
 /* line 21, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-american-sign-language-interpreting:before {
-  content: "\f2a3";
+.fa-search-minus:before {
+  content: "";
 }
 
 /* line 22, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-amilia:before {
-  content: "\f36d";
+.fa-power-off:before {
+  content: "";
 }
 
 /* line 23, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-anchor:before {
-  content: "\f13d";
+.fa-signal:before {
+  content: "";
 }
 
 /* line 24, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-android:before {
-  content: "\f17b";
-}
-
-/* line 25, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angellist:before {
-  content: "\f209";
+.fa-gear:before,
+.fa-cog:before {
+  content: "";
 }
 
 /* line 26, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-double-down:before {
-  content: "\f103";
+.fa-trash-o:before {
+  content: "";
 }
 
 /* line 27, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-double-left:before {
-  content: "\f100";
+.fa-home:before {
+  content: "";
 }
 
 /* line 28, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-double-right:before {
-  content: "\f101";
+.fa-file-o:before {
+  content: "";
 }
 
 /* line 29, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-double-up:before {
-  content: "\f102";
+.fa-clock-o:before {
+  content: "";
 }
 
 /* line 30, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-down:before {
-  content: "\f107";
+.fa-road:before {
+  content: "";
 }
 
 /* line 31, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-left:before {
-  content: "\f104";
+.fa-download:before {
+  content: "";
 }
 
 /* line 32, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-right:before {
-  content: "\f105";
+.fa-arrow-circle-o-down:before {
+  content: "";
 }
 
 /* line 33, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-up:before {
-  content: "\f106";
+.fa-arrow-circle-o-up:before {
+  content: "";
 }
 
 /* line 34, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angrycreative:before {
-  content: "\f36e";
+.fa-inbox:before {
+  content: "";
 }
 
 /* line 35, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-angular:before {
-  content: "\f420";
+.fa-play-circle-o:before {
+  content: "";
 }
 
 /* line 36, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-app-store:before {
-  content: "\f36f";
-}
-
-/* line 37, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-app-store-ios:before {
-  content: "\f370";
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "";
 }
 
 /* line 38, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-apper:before {
-  content: "\f371";
+.fa-refresh:before {
+  content: "";
 }
 
 /* line 39, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-apple:before {
-  content: "\f179";
+.fa-list-alt:before {
+  content: "";
 }
 
 /* line 40, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-apple-pay:before {
-  content: "\f415";
+.fa-lock:before {
+  content: "";
 }
 
 /* line 41, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-archive:before {
-  content: "\f187";
+.fa-flag:before {
+  content: "";
 }
 
 /* line 42, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-alt-circle-down:before {
-  content: "\f358";
+.fa-headphones:before {
+  content: "";
 }
 
 /* line 43, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-alt-circle-left:before {
-  content: "\f359";
+.fa-volume-off:before {
+  content: "";
 }
 
 /* line 44, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-alt-circle-right:before {
-  content: "\f35a";
+.fa-volume-down:before {
+  content: "";
 }
 
 /* line 45, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-alt-circle-up:before {
-  content: "\f35b";
+.fa-volume-up:before {
+  content: "";
 }
 
 /* line 46, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-down:before {
-  content: "\f0ab";
+.fa-qrcode:before {
+  content: "";
 }
 
 /* line 47, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-left:before {
-  content: "\f0a8";
+.fa-barcode:before {
+  content: "";
 }
 
 /* line 48, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-right:before {
-  content: "\f0a9";
+.fa-tag:before {
+  content: "";
 }
 
 /* line 49, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-up:before {
-  content: "\f0aa";
+.fa-tags:before {
+  content: "";
 }
 
 /* line 50, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-down:before {
-  content: "\f063";
+.fa-book:before {
+  content: "";
 }
 
 /* line 51, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-left:before {
-  content: "\f060";
+.fa-bookmark:before {
+  content: "";
 }
 
 /* line 52, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-right:before {
-  content: "\f061";
+.fa-print:before {
+  content: "";
 }
 
 /* line 53, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-up:before {
-  content: "\f062";
+.fa-camera:before {
+  content: "";
 }
 
 /* line 54, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrows-alt:before {
-  content: "\f0b2";
+.fa-font:before {
+  content: "";
 }
 
 /* line 55, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrows-alt-h:before {
-  content: "\f337";
+.fa-bold:before {
+  content: "";
 }
 
 /* line 56, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrows-alt-v:before {
-  content: "\f338";
+.fa-italic:before {
+  content: "";
 }
 
 /* line 57, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-assistive-listening-systems:before {
-  content: "\f2a2";
+.fa-text-height:before {
+  content: "";
 }
 
 /* line 58, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-asterisk:before {
-  content: "\f069";
+.fa-text-width:before {
+  content: "";
 }
 
 /* line 59, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-asymmetrik:before {
-  content: "\f372";
+.fa-align-left:before {
+  content: "";
 }
 
 /* line 60, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-at:before {
-  content: "\f1fa";
+.fa-align-center:before {
+  content: "";
 }
 
 /* line 61, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-audible:before {
-  content: "\f373";
+.fa-align-right:before {
+  content: "";
 }
 
 /* line 62, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-audio-description:before {
-  content: "\f29e";
+.fa-align-justify:before {
+  content: "";
 }
 
 /* line 63, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-autoprefixer:before {
-  content: "\f41c";
+.fa-list:before {
+  content: "";
 }
 
 /* line 64, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-avianex:before {
-  content: "\f374";
-}
-
-/* line 65, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-aviato:before {
-  content: "\f421";
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "";
 }
 
 /* line 66, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-aws:before {
-  content: "\f375";
+.fa-indent:before {
+  content: "";
 }
 
 /* line 67, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-backward:before {
-  content: "\f04a";
+.fa-video-camera:before {
+  content: "";
 }
 
 /* line 68, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-balance-scale:before {
-  content: "\f24e";
-}
-
-/* line 69, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ban:before {
-  content: "\f05e";
-}
-
-/* line 70, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bandcamp:before {
-  content: "\f2d5";
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "";
 }
 
 /* line 71, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-barcode:before {
-  content: "\f02a";
+.fa-pencil:before {
+  content: "";
 }
 
 /* line 72, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bars:before {
-  content: "\f0c9";
+.fa-map-marker:before {
+  content: "";
 }
 
 /* line 73, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-baseball-ball:before {
-  content: "\f433";
+.fa-adjust:before {
+  content: "";
 }
 
 /* line 74, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-basketball-ball:before {
-  content: "\f434";
+.fa-tint:before {
+  content: "";
 }
 
 /* line 75, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bath:before {
-  content: "\f2cd";
-}
-
-/* line 76, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-empty:before {
-  content: "\f244";
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "";
 }
 
 /* line 77, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-full:before {
-  content: "\f240";
+.fa-share-square-o:before {
+  content: "";
 }
 
 /* line 78, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-half:before {
-  content: "\f242";
+.fa-check-square-o:before {
+  content: "";
 }
 
 /* line 79, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-quarter:before {
-  content: "\f243";
+.fa-arrows:before {
+  content: "";
 }
 
 /* line 80, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-three-quarters:before {
-  content: "\f241";
+.fa-step-backward:before {
+  content: "";
 }
 
 /* line 81, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bed:before {
-  content: "\f236";
+.fa-fast-backward:before {
+  content: "";
 }
 
 /* line 82, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-beer:before {
-  content: "\f0fc";
+.fa-backward:before {
+  content: "";
 }
 
 /* line 83, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-behance:before {
-  content: "\f1b4";
+.fa-play:before {
+  content: "";
 }
 
 /* line 84, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-behance-square:before {
-  content: "\f1b5";
+.fa-pause:before {
+  content: "";
 }
 
 /* line 85, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bell:before {
-  content: "\f0f3";
+.fa-stop:before {
+  content: "";
 }
 
 /* line 86, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bell-slash:before {
-  content: "\f1f6";
+.fa-forward:before {
+  content: "";
 }
 
 /* line 87, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bicycle:before {
-  content: "\f206";
+.fa-fast-forward:before {
+  content: "";
 }
 
 /* line 88, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bimobject:before {
-  content: "\f378";
+.fa-step-forward:before {
+  content: "";
 }
 
 /* line 89, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-binoculars:before {
-  content: "\f1e5";
+.fa-eject:before {
+  content: "";
 }
 
 /* line 90, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-birthday-cake:before {
-  content: "\f1fd";
+.fa-chevron-left:before {
+  content: "";
 }
 
 /* line 91, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bitbucket:before {
-  content: "\f171";
+.fa-chevron-right:before {
+  content: "";
 }
 
 /* line 92, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bitcoin:before {
-  content: "\f379";
+.fa-plus-circle:before {
+  content: "";
 }
 
 /* line 93, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bity:before {
-  content: "\f37a";
+.fa-minus-circle:before {
+  content: "";
 }
 
 /* line 94, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-black-tie:before {
-  content: "\f27e";
+.fa-times-circle:before {
+  content: "";
 }
 
 /* line 95, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-blackberry:before {
-  content: "\f37b";
+.fa-check-circle:before {
+  content: "";
 }
 
 /* line 96, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-blind:before {
-  content: "\f29d";
+.fa-question-circle:before {
+  content: "";
 }
 
 /* line 97, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-blogger:before {
-  content: "\f37c";
+.fa-info-circle:before {
+  content: "";
 }
 
 /* line 98, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-blogger-b:before {
-  content: "\f37d";
+.fa-crosshairs:before {
+  content: "";
 }
 
 /* line 99, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bluetooth:before {
-  content: "\f293";
+.fa-times-circle-o:before {
+  content: "";
 }
 
 /* line 100, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bluetooth-b:before {
-  content: "\f294";
+.fa-check-circle-o:before {
+  content: "";
 }
 
 /* line 101, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bold:before {
-  content: "\f032";
+.fa-ban:before {
+  content: "";
 }
 
 /* line 102, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bolt:before {
-  content: "\f0e7";
+.fa-arrow-left:before {
+  content: "";
 }
 
 /* line 103, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bomb:before {
-  content: "\f1e2";
+.fa-arrow-right:before {
+  content: "";
 }
 
 /* line 104, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-book:before {
-  content: "\f02d";
+.fa-arrow-up:before {
+  content: "";
 }
 
 /* line 105, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bookmark:before {
-  content: "\f02e";
+.fa-arrow-down:before {
+  content: "";
 }
 
 /* line 106, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bowling-ball:before {
-  content: "\f436";
-}
-
-/* line 107, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-braille:before {
-  content: "\f2a1";
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "";
 }
 
 /* line 108, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-briefcase:before {
-  content: "\f0b1";
+.fa-expand:before {
+  content: "";
 }
 
 /* line 109, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-btc:before {
-  content: "\f15a";
+.fa-compress:before {
+  content: "";
 }
 
 /* line 110, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bug:before {
-  content: "\f188";
+.fa-plus:before {
+  content: "";
 }
 
 /* line 111, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-building:before {
-  content: "\f1ad";
+.fa-minus:before {
+  content: "";
 }
 
 /* line 112, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bullhorn:before {
-  content: "\f0a1";
+.fa-asterisk:before {
+  content: "";
 }
 
 /* line 113, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bullseye:before {
-  content: "\f140";
+.fa-exclamation-circle:before {
+  content: "";
 }
 
 /* line 114, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-buromobelexperte:before {
-  content: "\f37f";
+.fa-gift:before {
+  content: "";
 }
 
 /* line 115, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-bus:before {
-  content: "\f207";
+.fa-leaf:before {
+  content: "";
 }
 
 /* line 116, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-buysellads:before {
-  content: "\f20d";
+.fa-fire:before {
+  content: "";
 }
 
 /* line 117, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-calculator:before {
-  content: "\f1ec";
+.fa-eye:before {
+  content: "";
 }
 
 /* line 118, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar:before {
-  content: "\f133";
+.fa-eye-slash:before {
+  content: "";
 }
 
 /* line 119, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-alt:before {
-  content: "\f073";
-}
-
-/* line 120, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-check:before {
-  content: "\f274";
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "";
 }
 
 /* line 121, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-minus:before {
-  content: "\f272";
+.fa-plane:before {
+  content: "";
 }
 
 /* line 122, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-plus:before {
-  content: "\f271";
+.fa-calendar:before {
+  content: "";
 }
 
 /* line 123, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-times:before {
-  content: "\f273";
+.fa-random:before {
+  content: "";
 }
 
 /* line 124, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-camera:before {
-  content: "\f030";
+.fa-comment:before {
+  content: "";
 }
 
 /* line 125, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-camera-retro:before {
-  content: "\f083";
+.fa-magnet:before {
+  content: "";
 }
 
 /* line 126, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-car:before {
-  content: "\f1b9";
+.fa-chevron-up:before {
+  content: "";
 }
 
 /* line 127, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-down:before {
-  content: "\f0d7";
+.fa-chevron-down:before {
+  content: "";
 }
 
 /* line 128, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-left:before {
-  content: "\f0d9";
+.fa-retweet:before {
+  content: "";
 }
 
 /* line 129, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-right:before {
-  content: "\f0da";
+.fa-shopping-cart:before {
+  content: "";
 }
 
 /* line 130, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-square-down:before {
-  content: "\f150";
+.fa-folder:before {
+  content: "";
 }
 
 /* line 131, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-square-left:before {
-  content: "\f191";
+.fa-folder-open:before {
+  content: "";
 }
 
 /* line 132, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-square-right:before {
-  content: "\f152";
+.fa-arrows-v:before {
+  content: "";
 }
 
 /* line 133, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-square-up:before {
-  content: "\f151";
+.fa-arrows-h:before {
+  content: "";
 }
 
 /* line 134, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-up:before {
-  content: "\f0d8";
-}
-
-/* line 135, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cart-arrow-down:before {
-  content: "\f218";
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "";
 }
 
 /* line 136, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cart-plus:before {
-  content: "\f217";
+.fa-twitter-square:before {
+  content: "";
 }
 
 /* line 137, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-amazon-pay:before {
-  content: "\f42d";
+.fa-facebook-square:before {
+  content: "";
 }
 
 /* line 138, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-amex:before {
-  content: "\f1f3";
+.fa-camera-retro:before {
+  content: "";
 }
 
 /* line 139, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-apple-pay:before {
-  content: "\f416";
+.fa-key:before {
+  content: "";
 }
 
 /* line 140, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-diners-club:before {
-  content: "\f24c";
-}
-
-/* line 141, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-discover:before {
-  content: "\f1f2";
+.fa-gears:before,
+.fa-cogs:before {
+  content: "";
 }
 
 /* line 142, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-jcb:before {
-  content: "\f24b";
+.fa-comments:before {
+  content: "";
 }
 
 /* line 143, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-mastercard:before {
-  content: "\f1f1";
+.fa-thumbs-o-up:before {
+  content: "";
 }
 
 /* line 144, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-paypal:before {
-  content: "\f1f4";
+.fa-thumbs-o-down:before {
+  content: "";
 }
 
 /* line 145, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-stripe:before {
-  content: "\f1f5";
+.fa-star-half:before {
+  content: "";
 }
 
 /* line 146, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-visa:before {
-  content: "\f1f0";
+.fa-heart-o:before {
+  content: "";
 }
 
 /* line 147, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-centercode:before {
-  content: "\f380";
+.fa-sign-out:before {
+  content: "";
 }
 
 /* line 148, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-certificate:before {
-  content: "\f0a3";
+.fa-linkedin-square:before {
+  content: "";
 }
 
 /* line 149, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chart-area:before {
-  content: "\f1fe";
+.fa-thumb-tack:before {
+  content: "";
 }
 
 /* line 150, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chart-bar:before {
-  content: "\f080";
+.fa-external-link:before {
+  content: "";
 }
 
 /* line 151, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chart-line:before {
-  content: "\f201";
+.fa-sign-in:before {
+  content: "";
 }
 
 /* line 152, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chart-pie:before {
-  content: "\f200";
+.fa-trophy:before {
+  content: "";
 }
 
 /* line 153, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-check:before {
-  content: "\f00c";
+.fa-github-square:before {
+  content: "";
 }
 
 /* line 154, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-check-circle:before {
-  content: "\f058";
+.fa-upload:before {
+  content: "";
 }
 
 /* line 155, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-check-square:before {
-  content: "\f14a";
+.fa-lemon-o:before {
+  content: "";
 }
 
 /* line 156, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chess:before {
-  content: "\f439";
+.fa-phone:before {
+  content: "";
 }
 
 /* line 157, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chess-bishop:before {
-  content: "\f43a";
+.fa-square-o:before {
+  content: "";
 }
 
 /* line 158, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chess-board:before {
-  content: "\f43c";
+.fa-bookmark-o:before {
+  content: "";
 }
 
 /* line 159, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chess-king:before {
-  content: "\f43f";
+.fa-phone-square:before {
+  content: "";
 }
 
 /* line 160, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chess-knight:before {
-  content: "\f441";
+.fa-twitter:before {
+  content: "";
 }
 
 /* line 161, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chess-pawn:before {
-  content: "\f443";
-}
-
-/* line 162, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chess-queen:before {
-  content: "\f445";
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "";
 }
 
 /* line 163, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chess-rook:before {
-  content: "\f447";
+.fa-github:before {
+  content: "";
 }
 
 /* line 164, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-circle-down:before {
-  content: "\f13a";
+.fa-unlock:before {
+  content: "";
 }
 
 /* line 165, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-circle-left:before {
-  content: "\f137";
+.fa-credit-card:before {
+  content: "";
 }
 
 /* line 166, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-circle-right:before {
-  content: "\f138";
-}
-
-/* line 167, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-circle-up:before {
-  content: "\f139";
+.fa-feed:before,
+.fa-rss:before {
+  content: "";
 }
 
 /* line 168, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-down:before {
-  content: "\f078";
+.fa-hdd-o:before {
+  content: "";
 }
 
 /* line 169, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-left:before {
-  content: "\f053";
+.fa-bullhorn:before {
+  content: "";
 }
 
 /* line 170, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-right:before {
-  content: "\f054";
+.fa-bell:before {
+  content: "";
 }
 
 /* line 171, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-up:before {
-  content: "\f077";
+.fa-certificate:before {
+  content: "";
 }
 
 /* line 172, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-child:before {
-  content: "\f1ae";
+.fa-hand-o-right:before {
+  content: "";
 }
 
 /* line 173, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-chrome:before {
-  content: "\f268";
+.fa-hand-o-left:before {
+  content: "";
 }
 
 /* line 174, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-circle:before {
-  content: "\f111";
+.fa-hand-o-up:before {
+  content: "";
 }
 
 /* line 175, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-circle-notch:before {
-  content: "\f1ce";
+.fa-hand-o-down:before {
+  content: "";
 }
 
 /* line 176, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-clipboard:before {
-  content: "\f328";
+.fa-arrow-circle-left:before {
+  content: "";
 }
 
 /* line 177, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-clock:before {
-  content: "\f017";
+.fa-arrow-circle-right:before {
+  content: "";
 }
 
 /* line 178, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-clone:before {
-  content: "\f24d";
+.fa-arrow-circle-up:before {
+  content: "";
 }
 
 /* line 179, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-closed-captioning:before {
-  content: "\f20a";
+.fa-arrow-circle-down:before {
+  content: "";
 }
 
 /* line 180, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cloud:before {
-  content: "\f0c2";
+.fa-globe:before {
+  content: "";
 }
 
 /* line 181, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cloud-download-alt:before {
-  content: "\f381";
+.fa-wrench:before {
+  content: "";
 }
 
 /* line 182, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cloud-upload-alt:before {
-  content: "\f382";
+.fa-tasks:before {
+  content: "";
 }
 
 /* line 183, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cloudscale:before {
-  content: "\f383";
+.fa-filter:before {
+  content: "";
 }
 
 /* line 184, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cloudsmith:before {
-  content: "\f384";
+.fa-briefcase:before {
+  content: "";
 }
 
 /* line 185, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cloudversify:before {
-  content: "\f385";
+.fa-arrows-alt:before {
+  content: "";
 }
 
 /* line 186, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-code:before {
-  content: "\f121";
-}
-
-/* line 187, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-code-branch:before {
-  content: "\f126";
+.fa-group:before,
+.fa-users:before {
+  content: "";
 }
 
 /* line 188, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-codepen:before {
-  content: "\f1cb";
-}
-
-/* line 189, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-codiepie:before {
-  content: "\f284";
+.fa-chain:before,
+.fa-link:before {
+  content: "";
 }
 
 /* line 190, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-coffee:before {
-  content: "\f0f4";
+.fa-cloud:before {
+  content: "";
 }
 
 /* line 191, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cog:before {
-  content: "\f013";
+.fa-flask:before {
+  content: "";
 }
 
 /* line 192, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cogs:before {
-  content: "\f085";
-}
-
-/* line 193, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-columns:before {
-  content: "\f0db";
+.fa-cut:before,
+.fa-scissors:before {
+  content: "";
 }
 
 /* line 194, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-comment:before {
-  content: "\f075";
-}
-
-/* line 195, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-comment-alt:before {
-  content: "\f27a";
+.fa-copy:before,
+.fa-files-o:before {
+  content: "";
 }
 
 /* line 196, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-comments:before {
-  content: "\f086";
+.fa-paperclip:before {
+  content: "";
 }
 
 /* line 197, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-compass:before {
-  content: "\f14e";
-}
-
-/* line 198, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-compress:before {
-  content: "\f066";
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "";
 }
 
 /* line 199, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-connectdevelop:before {
-  content: "\f20e";
+.fa-square:before {
+  content: "";
 }
 
 /* line 200, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-contao:before {
-  content: "\f26d";
-}
-
-/* line 201, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-copy:before {
-  content: "\f0c5";
-}
-
-/* line 202, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-copyright:before {
-  content: "\f1f9";
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "";
 }
 
 /* line 203, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cpanel:before {
-  content: "\f388";
+.fa-list-ul:before {
+  content: "";
 }
 
 /* line 204, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-creative-commons:before {
-  content: "\f25e";
+.fa-list-ol:before {
+  content: "";
 }
 
 /* line 205, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-credit-card:before {
-  content: "\f09d";
+.fa-strikethrough:before {
+  content: "";
 }
 
 /* line 206, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-crop:before {
-  content: "\f125";
+.fa-underline:before {
+  content: "";
 }
 
 /* line 207, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-crosshairs:before {
-  content: "\f05b";
+.fa-table:before {
+  content: "";
 }
 
 /* line 208, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-css3:before {
-  content: "\f13c";
+.fa-magic:before {
+  content: "";
 }
 
 /* line 209, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-css3-alt:before {
-  content: "\f38b";
+.fa-truck:before {
+  content: "";
 }
 
 /* line 210, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cube:before {
-  content: "\f1b2";
+.fa-pinterest:before {
+  content: "";
 }
 
 /* line 211, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cubes:before {
-  content: "\f1b3";
+.fa-pinterest-square:before {
+  content: "";
 }
 
 /* line 212, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cut:before {
-  content: "\f0c4";
+.fa-google-plus-square:before {
+  content: "";
 }
 
 /* line 213, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-cuttlefish:before {
-  content: "\f38c";
+.fa-google-plus:before {
+  content: "";
 }
 
 /* line 214, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-d-and-d:before {
-  content: "\f38d";
+.fa-money:before {
+  content: "";
 }
 
 /* line 215, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-dashcube:before {
-  content: "\f210";
+.fa-caret-down:before {
+  content: "";
 }
 
 /* line 216, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-database:before {
-  content: "\f1c0";
+.fa-caret-up:before {
+  content: "";
 }
 
 /* line 217, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-deaf:before {
-  content: "\f2a4";
+.fa-caret-left:before {
+  content: "";
 }
 
 /* line 218, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-delicious:before {
-  content: "\f1a5";
+.fa-caret-right:before {
+  content: "";
 }
 
 /* line 219, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-deploydog:before {
-  content: "\f38e";
+.fa-columns:before {
+  content: "";
 }
 
 /* line 220, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-deskpro:before {
-  content: "\f38f";
-}
-
-/* line 221, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-desktop:before {
-  content: "\f108";
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "";
 }
 
 /* line 222, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-deviantart:before {
-  content: "\f1bd";
-}
-
-/* line 223, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-digg:before {
-  content: "\f1a6";
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "";
 }
 
 /* line 224, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-digital-ocean:before {
-  content: "\f391";
-}
-
-/* line 225, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-discord:before {
-  content: "\f392";
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "";
 }
 
 /* line 226, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-discourse:before {
-  content: "\f393";
+.fa-envelope:before {
+  content: "";
 }
 
 /* line 227, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-dochub:before {
-  content: "\f394";
+.fa-linkedin:before {
+  content: "";
 }
 
 /* line 228, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-docker:before {
-  content: "\f395";
-}
-
-/* line 229, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-dollar-sign:before {
-  content: "\f155";
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "";
 }
 
 /* line 230, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-dot-circle:before {
-  content: "\f192";
-}
-
-/* line 231, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-download:before {
-  content: "\f019";
+.fa-legal:before,
+.fa-gavel:before {
+  content: "";
 }
 
 /* line 232, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-draft2digital:before {
-  content: "\f396";
-}
-
-/* line 233, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-dribbble:before {
-  content: "\f17d";
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "";
 }
 
 /* line 234, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-dribbble-square:before {
-  content: "\f397";
+.fa-comment-o:before {
+  content: "";
 }
 
 /* line 235, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-dropbox:before {
-  content: "\f16b";
+.fa-comments-o:before {
+  content: "";
 }
 
 /* line 236, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-drupal:before {
-  content: "\f1a9";
-}
-
-/* line 237, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-dyalog:before {
-  content: "\f399";
+.fa-flash:before,
+.fa-bolt:before {
+  content: "";
 }
 
 /* line 238, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-earlybirds:before {
-  content: "\f39a";
+.fa-sitemap:before {
+  content: "";
 }
 
 /* line 239, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-edge:before {
-  content: "\f282";
+.fa-umbrella:before {
+  content: "";
 }
 
 /* line 240, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-edit:before {
-  content: "\f044";
-}
-
-/* line 241, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-eject:before {
-  content: "\f052";
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "";
 }
 
 /* line 242, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-elementor:before {
-  content: "\f430";
+.fa-lightbulb-o:before {
+  content: "";
 }
 
 /* line 243, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ellipsis-h:before {
-  content: "\f141";
+.fa-exchange:before {
+  content: "";
 }
 
 /* line 244, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ellipsis-v:before {
-  content: "\f142";
+.fa-cloud-download:before {
+  content: "";
 }
 
 /* line 245, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ember:before {
-  content: "\f423";
+.fa-cloud-upload:before {
+  content: "";
 }
 
 /* line 246, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-empire:before {
-  content: "\f1d1";
+.fa-user-md:before {
+  content: "";
 }
 
 /* line 247, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-envelope:before {
-  content: "\f0e0";
+.fa-stethoscope:before {
+  content: "";
 }
 
 /* line 248, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-envelope-open:before {
-  content: "\f2b6";
+.fa-suitcase:before {
+  content: "";
 }
 
 /* line 249, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-envelope-square:before {
-  content: "\f199";
+.fa-bell-o:before {
+  content: "";
 }
 
 /* line 250, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-envira:before {
-  content: "\f299";
+.fa-coffee:before {
+  content: "";
 }
 
 /* line 251, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-eraser:before {
-  content: "\f12d";
+.fa-cutlery:before {
+  content: "";
 }
 
 /* line 252, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-erlang:before {
-  content: "\f39d";
+.fa-file-text-o:before {
+  content: "";
 }
 
 /* line 253, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ethereum:before {
-  content: "\f42e";
+.fa-building-o:before {
+  content: "";
 }
 
 /* line 254, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-etsy:before {
-  content: "\f2d7";
+.fa-hospital-o:before {
+  content: "";
 }
 
 /* line 255, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-euro-sign:before {
-  content: "\f153";
+.fa-ambulance:before {
+  content: "";
 }
 
 /* line 256, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-exchange-alt:before {
-  content: "\f362";
+.fa-medkit:before {
+  content: "";
 }
 
 /* line 257, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-exclamation:before {
-  content: "\f12a";
+.fa-fighter-jet:before {
+  content: "";
 }
 
 /* line 258, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-exclamation-circle:before {
-  content: "\f06a";
+.fa-beer:before {
+  content: "";
 }
 
 /* line 259, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-exclamation-triangle:before {
-  content: "\f071";
+.fa-h-square:before {
+  content: "";
 }
 
 /* line 260, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-expand:before {
-  content: "\f065";
+.fa-plus-square:before {
+  content: "";
 }
 
 /* line 261, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-expand-arrows-alt:before {
-  content: "\f31e";
+.fa-angle-double-left:before {
+  content: "";
 }
 
 /* line 262, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-expeditedssl:before {
-  content: "\f23e";
+.fa-angle-double-right:before {
+  content: "";
 }
 
 /* line 263, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-external-link-alt:before {
-  content: "\f35d";
+.fa-angle-double-up:before {
+  content: "";
 }
 
 /* line 264, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-external-link-square-alt:before {
-  content: "\f360";
+.fa-angle-double-down:before {
+  content: "";
 }
 
 /* line 265, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-eye:before {
-  content: "\f06e";
+.fa-angle-left:before {
+  content: "";
 }
 
 /* line 266, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-eye-dropper:before {
-  content: "\f1fb";
+.fa-angle-right:before {
+  content: "";
 }
 
 /* line 267, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-eye-slash:before {
-  content: "\f070";
+.fa-angle-up:before {
+  content: "";
 }
 
 /* line 268, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-facebook:before {
-  content: "\f09a";
+.fa-angle-down:before {
+  content: "";
 }
 
 /* line 269, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-facebook-f:before {
-  content: "\f39e";
+.fa-desktop:before {
+  content: "";
 }
 
 /* line 270, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-facebook-messenger:before {
-  content: "\f39f";
+.fa-laptop:before {
+  content: "";
 }
 
 /* line 271, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-facebook-square:before {
-  content: "\f082";
+.fa-tablet:before {
+  content: "";
 }
 
 /* line 272, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fast-backward:before {
-  content: "\f049";
-}
-
-/* line 273, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fast-forward:before {
-  content: "\f050";
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "";
 }
 
 /* line 274, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fax:before {
-  content: "\f1ac";
+.fa-circle-o:before {
+  content: "";
 }
 
 /* line 275, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-female:before {
-  content: "\f182";
+.fa-quote-left:before {
+  content: "";
 }
 
 /* line 276, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fighter-jet:before {
-  content: "\f0fb";
+.fa-quote-right:before {
+  content: "";
 }
 
 /* line 277, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file:before {
-  content: "\f15b";
+.fa-spinner:before {
+  content: "";
 }
 
 /* line 278, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-alt:before {
-  content: "\f15c";
+.fa-circle:before {
+  content: "";
 }
 
 /* line 279, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-archive:before {
-  content: "\f1c6";
-}
-
-/* line 280, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-audio:before {
-  content: "\f1c7";
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "";
 }
 
 /* line 281, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-code:before {
-  content: "\f1c9";
+.fa-github-alt:before {
+  content: "";
 }
 
 /* line 282, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-excel:before {
-  content: "\f1c3";
+.fa-folder-o:before {
+  content: "";
 }
 
 /* line 283, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-image:before {
-  content: "\f1c5";
+.fa-folder-open-o:before {
+  content: "";
 }
 
 /* line 284, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-pdf:before {
-  content: "\f1c1";
+.fa-smile-o:before {
+  content: "";
 }
 
 /* line 285, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-powerpoint:before {
-  content: "\f1c4";
+.fa-frown-o:before {
+  content: "";
 }
 
 /* line 286, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-video:before {
-  content: "\f1c8";
+.fa-meh-o:before {
+  content: "";
 }
 
 /* line 287, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-word:before {
-  content: "\f1c2";
+.fa-gamepad:before {
+  content: "";
 }
 
 /* line 288, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-film:before {
-  content: "\f008";
+.fa-keyboard-o:before {
+  content: "";
 }
 
 /* line 289, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-filter:before {
-  content: "\f0b0";
+.fa-flag-o:before {
+  content: "";
 }
 
 /* line 290, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fire:before {
-  content: "\f06d";
+.fa-flag-checkered:before {
+  content: "";
 }
 
 /* line 291, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fire-extinguisher:before {
-  content: "\f134";
+.fa-terminal:before {
+  content: "";
 }
 
 /* line 292, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-firefox:before {
-  content: "\f269";
+.fa-code:before {
+  content: "";
 }
 
 /* line 293, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-first-order:before {
-  content: "\f2b0";
-}
-
-/* line 294, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-firstdraft:before {
-  content: "\f3a1";
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "";
 }
 
 /* line 295, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-flag:before {
-  content: "\f024";
-}
-
-/* line 296, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-flag-checkered:before {
-  content: "\f11e";
-}
-
-/* line 297, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-flask:before {
-  content: "\f0c3";
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "";
 }
 
 /* line 298, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-flickr:before {
-  content: "\f16e";
+.fa-location-arrow:before {
+  content: "";
 }
 
 /* line 299, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-flipboard:before {
-  content: "\f44d";
+.fa-crop:before {
+  content: "";
 }
 
 /* line 300, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fly:before {
-  content: "\f417";
+.fa-code-fork:before {
+  content: "";
 }
 
 /* line 301, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-folder:before {
-  content: "\f07b";
-}
-
-/* line 302, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-folder-open:before {
-  content: "\f07c";
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "";
 }
 
 /* line 303, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-font:before {
-  content: "\f031";
+.fa-question:before {
+  content: "";
 }
 
 /* line 304, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-font-awesome:before {
-  content: "\f2b4";
+.fa-info:before {
+  content: "";
 }
 
 /* line 305, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-font-awesome-alt:before {
-  content: "\f35c";
+.fa-exclamation:before {
+  content: "";
 }
 
 /* line 306, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-font-awesome-flag:before {
-  content: "\f425";
+.fa-superscript:before {
+  content: "";
 }
 
 /* line 307, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fonticons:before {
-  content: "\f280";
+.fa-subscript:before {
+  content: "";
 }
 
 /* line 308, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fonticons-fi:before {
-  content: "\f3a2";
+.fa-eraser:before {
+  content: "";
 }
 
 /* line 309, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-football-ball:before {
-  content: "\f44e";
+.fa-puzzle-piece:before {
+  content: "";
 }
 
 /* line 310, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fort-awesome:before {
-  content: "\f286";
+.fa-microphone:before {
+  content: "";
 }
 
 /* line 311, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-fort-awesome-alt:before {
-  content: "\f3a3";
+.fa-microphone-slash:before {
+  content: "";
 }
 
 /* line 312, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-forumbee:before {
-  content: "\f211";
+.fa-shield:before {
+  content: "";
 }
 
 /* line 313, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-forward:before {
-  content: "\f04e";
+.fa-calendar-o:before {
+  content: "";
 }
 
 /* line 314, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-foursquare:before {
-  content: "\f180";
+.fa-fire-extinguisher:before {
+  content: "";
 }
 
 /* line 315, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-free-code-camp:before {
-  content: "\f2c5";
+.fa-rocket:before {
+  content: "";
 }
 
 /* line 316, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-freebsd:before {
-  content: "\f3a4";
+.fa-maxcdn:before {
+  content: "";
 }
 
 /* line 317, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-frown:before {
-  content: "\f119";
+.fa-chevron-circle-left:before {
+  content: "";
 }
 
 /* line 318, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-futbol:before {
-  content: "\f1e3";
+.fa-chevron-circle-right:before {
+  content: "";
 }
 
 /* line 319, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gamepad:before {
-  content: "\f11b";
+.fa-chevron-circle-up:before {
+  content: "";
 }
 
 /* line 320, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gavel:before {
-  content: "\f0e3";
+.fa-chevron-circle-down:before {
+  content: "";
 }
 
 /* line 321, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gem:before {
-  content: "\f3a5";
+.fa-html5:before {
+  content: "";
 }
 
 /* line 322, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-genderless:before {
-  content: "\f22d";
+.fa-css3:before {
+  content: "";
 }
 
 /* line 323, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-get-pocket:before {
-  content: "\f265";
+.fa-anchor:before {
+  content: "";
 }
 
 /* line 324, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gg:before {
-  content: "\f260";
+.fa-unlock-alt:before {
+  content: "";
 }
 
 /* line 325, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gg-circle:before {
-  content: "\f261";
+.fa-bullseye:before {
+  content: "";
 }
 
 /* line 326, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gift:before {
-  content: "\f06b";
+.fa-ellipsis-h:before {
+  content: "";
 }
 
 /* line 327, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-git:before {
-  content: "\f1d3";
+.fa-ellipsis-v:before {
+  content: "";
 }
 
 /* line 328, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-git-square:before {
-  content: "\f1d2";
+.fa-rss-square:before {
+  content: "";
 }
 
 /* line 329, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-github:before {
-  content: "\f09b";
+.fa-play-circle:before {
+  content: "";
 }
 
 /* line 330, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-github-alt:before {
-  content: "\f113";
+.fa-ticket:before {
+  content: "";
 }
 
 /* line 331, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-github-square:before {
-  content: "\f092";
+.fa-minus-square:before {
+  content: "";
 }
 
 /* line 332, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gitkraken:before {
-  content: "\f3a6";
+.fa-minus-square-o:before {
+  content: "";
 }
 
 /* line 333, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gitlab:before {
-  content: "\f296";
+.fa-level-up:before {
+  content: "";
 }
 
 /* line 334, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gitter:before {
-  content: "\f426";
+.fa-level-down:before {
+  content: "";
 }
 
 /* line 335, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-glass-martini:before {
-  content: "\f000";
+.fa-check-square:before {
+  content: "";
 }
 
 /* line 336, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-glide:before {
-  content: "\f2a5";
+.fa-pencil-square:before {
+  content: "";
 }
 
 /* line 337, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-glide-g:before {
-  content: "\f2a6";
+.fa-external-link-square:before {
+  content: "";
 }
 
 /* line 338, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-globe:before {
-  content: "\f0ac";
+.fa-share-square:before {
+  content: "";
 }
 
 /* line 339, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gofore:before {
-  content: "\f3a7";
+.fa-compass:before {
+  content: "";
 }
 
 /* line 340, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-golf-ball:before {
-  content: "\f450";
-}
-
-/* line 341, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-goodreads:before {
-  content: "\f3a8";
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "";
 }
 
 /* line 342, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-goodreads-g:before {
-  content: "\f3a9";
-}
-
-/* line 343, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-google:before {
-  content: "\f1a0";
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "";
 }
 
 /* line 344, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-google-drive:before {
-  content: "\f3aa";
-}
-
-/* line 345, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-google-play:before {
-  content: "\f3ab";
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "";
 }
 
 /* line 346, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-google-plus:before {
-  content: "\f2b3";
-}
-
-/* line 347, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-google-plus-g:before {
-  content: "\f0d5";
+.fa-euro:before,
+.fa-eur:before {
+  content: "";
 }
 
 /* line 348, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-google-plus-square:before {
-  content: "\f0d4";
+.fa-gbp:before {
+  content: "";
 }
 
 /* line 349, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-google-wallet:before {
-  content: "\f1ee";
-}
-
-/* line 350, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-graduation-cap:before {
-  content: "\f19d";
+.fa-dollar:before,
+.fa-usd:before {
+  content: "";
 }
 
 /* line 351, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gratipay:before {
-  content: "\f184";
-}
-
-/* line 352, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-grav:before {
-  content: "\f2d6";
+.fa-rupee:before,
+.fa-inr:before {
+  content: "";
 }
 
 /* line 353, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gripfire:before {
-  content: "\f3ac";
-}
-
-/* line 354, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-grunt:before {
-  content: "\f3ad";
-}
-
-/* line 355, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-gulp:before {
-  content: "\f3ae";
-}
-
-/* line 356, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-h-square:before {
-  content: "\f0fd";
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "";
 }
 
 /* line 357, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hacker-news:before {
-  content: "\f1d4";
-}
-
-/* line 358, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hacker-news-square:before {
-  content: "\f3af";
-}
-
-/* line 359, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-lizard:before {
-  content: "\f258";
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "";
 }
 
 /* line 360, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-paper:before {
-  content: "\f256";
-}
-
-/* line 361, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-peace:before {
-  content: "\f25b";
+.fa-won:before,
+.fa-krw:before {
+  content: "";
 }
 
 /* line 362, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-point-down:before {
-  content: "\f0a7";
-}
-
-/* line 363, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-point-left:before {
-  content: "\f0a5";
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "";
 }
 
 /* line 364, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-point-right:before {
-  content: "\f0a4";
+.fa-file:before {
+  content: "";
 }
 
 /* line 365, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-point-up:before {
-  content: "\f0a6";
+.fa-file-text:before {
+  content: "";
 }
 
 /* line 366, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-pointer:before {
-  content: "\f25a";
+.fa-sort-alpha-asc:before {
+  content: "";
 }
 
 /* line 367, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-rock:before {
-  content: "\f255";
+.fa-sort-alpha-desc:before {
+  content: "";
 }
 
 /* line 368, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-scissors:before {
-  content: "\f257";
+.fa-sort-amount-asc:before {
+  content: "";
 }
 
 /* line 369, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-spock:before {
-  content: "\f259";
+.fa-sort-amount-desc:before {
+  content: "";
 }
 
 /* line 370, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-handshake:before {
-  content: "\f2b5";
+.fa-sort-numeric-asc:before {
+  content: "";
 }
 
 /* line 371, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hashtag:before {
-  content: "\f292";
+.fa-sort-numeric-desc:before {
+  content: "";
 }
 
 /* line 372, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hdd:before {
-  content: "\f0a0";
+.fa-thumbs-up:before {
+  content: "";
 }
 
 /* line 373, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-heading:before {
-  content: "\f1dc";
+.fa-thumbs-down:before {
+  content: "";
 }
 
 /* line 374, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-headphones:before {
-  content: "\f025";
+.fa-youtube-square:before {
+  content: "";
 }
 
 /* line 375, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-heart:before {
-  content: "\f004";
+.fa-youtube:before {
+  content: "";
 }
 
 /* line 376, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-heartbeat:before {
-  content: "\f21e";
+.fa-xing:before {
+  content: "";
 }
 
 /* line 377, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hips:before {
-  content: "\f452";
+.fa-xing-square:before {
+  content: "";
 }
 
 /* line 378, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hire-a-helper:before {
-  content: "\f3b0";
+.fa-youtube-play:before {
+  content: "";
 }
 
 /* line 379, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-history:before {
-  content: "\f1da";
+.fa-dropbox:before {
+  content: "";
 }
 
 /* line 380, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hockey-puck:before {
-  content: "\f453";
+.fa-stack-overflow:before {
+  content: "";
 }
 
 /* line 381, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-home:before {
-  content: "\f015";
+.fa-instagram:before {
+  content: "";
 }
 
 /* line 382, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hooli:before {
-  content: "\f427";
+.fa-flickr:before {
+  content: "";
 }
 
 /* line 383, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hospital:before {
-  content: "\f0f8";
+.fa-adn:before {
+  content: "";
 }
 
 /* line 384, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hotjar:before {
-  content: "\f3b1";
+.fa-bitbucket:before {
+  content: "";
 }
 
 /* line 385, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hourglass:before {
-  content: "\f254";
+.fa-bitbucket-square:before {
+  content: "";
 }
 
 /* line 386, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hourglass-end:before {
-  content: "\f253";
+.fa-tumblr:before {
+  content: "";
 }
 
 /* line 387, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hourglass-half:before {
-  content: "\f252";
+.fa-tumblr-square:before {
+  content: "";
 }
 
 /* line 388, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hourglass-start:before {
-  content: "\f251";
+.fa-long-arrow-down:before {
+  content: "";
 }
 
 /* line 389, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-houzz:before {
-  content: "\f27c";
+.fa-long-arrow-up:before {
+  content: "";
 }
 
 /* line 390, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-html5:before {
-  content: "\f13b";
+.fa-long-arrow-left:before {
+  content: "";
 }
 
 /* line 391, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-hubspot:before {
-  content: "\f3b2";
+.fa-long-arrow-right:before {
+  content: "";
 }
 
 /* line 392, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-i-cursor:before {
-  content: "\f246";
+.fa-apple:before {
+  content: "";
 }
 
 /* line 393, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-id-badge:before {
-  content: "\f2c1";
+.fa-windows:before {
+  content: "";
 }
 
 /* line 394, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-id-card:before {
-  content: "\f2c2";
+.fa-android:before {
+  content: "";
 }
 
 /* line 395, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-image:before {
-  content: "\f03e";
+.fa-linux:before {
+  content: "";
 }
 
 /* line 396, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-images:before {
-  content: "\f302";
+.fa-dribbble:before {
+  content: "";
 }
 
 /* line 397, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-imdb:before {
-  content: "\f2d8";
+.fa-skype:before {
+  content: "";
 }
 
 /* line 398, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-inbox:before {
-  content: "\f01c";
+.fa-foursquare:before {
+  content: "";
 }
 
 /* line 399, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-indent:before {
-  content: "\f03c";
+.fa-trello:before {
+  content: "";
 }
 
 /* line 400, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-industry:before {
-  content: "\f275";
+.fa-female:before {
+  content: "";
 }
 
 /* line 401, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-info:before {
-  content: "\f129";
+.fa-male:before {
+  content: "";
 }
 
 /* line 402, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-info-circle:before {
-  content: "\f05a";
-}
-
-/* line 403, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-instagram:before {
-  content: "\f16d";
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "";
 }
 
 /* line 404, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-internet-explorer:before {
-  content: "\f26b";
+.fa-sun-o:before {
+  content: "";
 }
 
 /* line 405, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ioxhost:before {
-  content: "\f208";
+.fa-moon-o:before {
+  content: "";
 }
 
 /* line 406, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-italic:before {
-  content: "\f033";
+.fa-archive:before {
+  content: "";
 }
 
 /* line 407, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-itunes:before {
-  content: "\f3b4";
+.fa-bug:before {
+  content: "";
 }
 
 /* line 408, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-itunes-note:before {
-  content: "\f3b5";
+.fa-vk:before {
+  content: "";
 }
 
 /* line 409, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-jenkins:before {
-  content: "\f3b6";
+.fa-weibo:before {
+  content: "";
 }
 
 /* line 410, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-joget:before {
-  content: "\f3b7";
+.fa-renren:before {
+  content: "";
 }
 
 /* line 411, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-joomla:before {
-  content: "\f1aa";
+.fa-pagelines:before {
+  content: "";
 }
 
 /* line 412, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-js:before {
-  content: "\f3b8";
+.fa-stack-exchange:before {
+  content: "";
 }
 
 /* line 413, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-js-square:before {
-  content: "\f3b9";
+.fa-arrow-circle-o-right:before {
+  content: "";
 }
 
 /* line 414, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-jsfiddle:before {
-  content: "\f1cc";
+.fa-arrow-circle-o-left:before {
+  content: "";
 }
 
 /* line 415, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-key:before {
-  content: "\f084";
-}
-
-/* line 416, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-keyboard:before {
-  content: "\f11c";
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "";
 }
 
 /* line 417, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-keycdn:before {
-  content: "\f3ba";
+.fa-dot-circle-o:before {
+  content: "";
 }
 
 /* line 418, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-kickstarter:before {
-  content: "\f3bb";
+.fa-wheelchair:before {
+  content: "";
 }
 
 /* line 419, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-kickstarter-k:before {
-  content: "\f3bc";
+.fa-vimeo-square:before {
+  content: "";
 }
 
 /* line 420, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-korvue:before {
-  content: "\f42f";
-}
-
-/* line 421, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-language:before {
-  content: "\f1ab";
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "";
 }
 
 /* line 422, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-laptop:before {
-  content: "\f109";
+.fa-plus-square-o:before {
+  content: "";
 }
 
 /* line 423, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-laravel:before {
-  content: "\f3bd";
+.fa-space-shuttle:before {
+  content: "";
 }
 
 /* line 424, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-lastfm:before {
-  content: "\f202";
+.fa-slack:before {
+  content: "";
 }
 
 /* line 425, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-lastfm-square:before {
-  content: "\f203";
+.fa-envelope-square:before {
+  content: "";
 }
 
 /* line 426, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-leaf:before {
-  content: "\f06c";
+.fa-wordpress:before {
+  content: "";
 }
 
 /* line 427, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-leanpub:before {
-  content: "\f212";
+.fa-openid:before {
+  content: "";
 }
 
 /* line 428, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-lemon:before {
-  content: "\f094";
-}
-
-/* line 429, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-less:before {
-  content: "\f41d";
-}
-
-/* line 430, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-level-down-alt:before {
-  content: "\f3be";
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "";
 }
 
 /* line 431, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-level-up-alt:before {
-  content: "\f3bf";
-}
-
-/* line 432, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-life-ring:before {
-  content: "\f1cd";
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "";
 }
 
 /* line 433, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-lightbulb:before {
-  content: "\f0eb";
+.fa-yahoo:before {
+  content: "";
 }
 
 /* line 434, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-line:before {
-  content: "\f3c0";
+.fa-google:before {
+  content: "";
 }
 
 /* line 435, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-link:before {
-  content: "\f0c1";
+.fa-reddit:before {
+  content: "";
 }
 
 /* line 436, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-linkedin:before {
-  content: "\f08c";
+.fa-reddit-square:before {
+  content: "";
 }
 
 /* line 437, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-linkedin-in:before {
-  content: "\f0e1";
+.fa-stumbleupon-circle:before {
+  content: "";
 }
 
 /* line 438, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-linode:before {
-  content: "\f2b8";
+.fa-stumbleupon:before {
+  content: "";
 }
 
 /* line 439, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-linux:before {
-  content: "\f17c";
+.fa-delicious:before {
+  content: "";
 }
 
 /* line 440, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-lira-sign:before {
-  content: "\f195";
+.fa-digg:before {
+  content: "";
 }
 
 /* line 441, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-list:before {
-  content: "\f03a";
+.fa-pied-piper:before {
+  content: "";
 }
 
 /* line 442, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-list-alt:before {
-  content: "\f022";
+.fa-pied-piper-alt:before {
+  content: "";
 }
 
 /* line 443, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-list-ol:before {
-  content: "\f0cb";
+.fa-drupal:before {
+  content: "";
 }
 
 /* line 444, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-list-ul:before {
-  content: "\f0ca";
+.fa-joomla:before {
+  content: "";
 }
 
 /* line 445, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-location-arrow:before {
-  content: "\f124";
+.fa-language:before {
+  content: "";
 }
 
 /* line 446, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-lock:before {
-  content: "\f023";
+.fa-fax:before {
+  content: "";
 }
 
 /* line 447, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-lock-open:before {
-  content: "\f3c1";
+.fa-building:before {
+  content: "";
 }
 
 /* line 448, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-long-arrow-alt-down:before {
-  content: "\f309";
+.fa-child:before {
+  content: "";
 }
 
 /* line 449, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-long-arrow-alt-left:before {
-  content: "\f30a";
+.fa-paw:before {
+  content: "";
 }
 
 /* line 450, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-long-arrow-alt-right:before {
-  content: "\f30b";
+.fa-spoon:before {
+  content: "";
 }
 
 /* line 451, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-long-arrow-alt-up:before {
-  content: "\f30c";
+.fa-cube:before {
+  content: "";
 }
 
 /* line 452, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-low-vision:before {
-  content: "\f2a8";
+.fa-cubes:before {
+  content: "";
 }
 
 /* line 453, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-lyft:before {
-  content: "\f3c3";
+.fa-behance:before {
+  content: "";
 }
 
 /* line 454, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-magento:before {
-  content: "\f3c4";
+.fa-behance-square:before {
+  content: "";
 }
 
 /* line 455, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-magic:before {
-  content: "\f0d0";
+.fa-steam:before {
+  content: "";
 }
 
 /* line 456, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-magnet:before {
-  content: "\f076";
+.fa-steam-square:before {
+  content: "";
 }
 
 /* line 457, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-male:before {
-  content: "\f183";
+.fa-recycle:before {
+  content: "";
 }
 
 /* line 458, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-map:before {
-  content: "\f279";
-}
-
-/* line 459, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-map-marker:before {
-  content: "\f041";
+.fa-automobile:before,
+.fa-car:before {
+  content: "";
 }
 
 /* line 460, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-map-marker-alt:before {
-  content: "\f3c5";
-}
-
-/* line 461, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-map-pin:before {
-  content: "\f276";
+.fa-cab:before,
+.fa-taxi:before {
+  content: "";
 }
 
 /* line 462, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-map-signs:before {
-  content: "\f277";
+.fa-tree:before {
+  content: "";
 }
 
 /* line 463, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars:before {
-  content: "\f222";
+.fa-spotify:before {
+  content: "";
 }
 
 /* line 464, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars-double:before {
-  content: "\f227";
+.fa-deviantart:before {
+  content: "";
 }
 
 /* line 465, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars-stroke:before {
-  content: "\f229";
+.fa-soundcloud:before {
+  content: "";
 }
 
 /* line 466, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars-stroke-h:before {
-  content: "\f22b";
+.fa-database:before {
+  content: "";
 }
 
 /* line 467, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars-stroke-v:before {
-  content: "\f22a";
+.fa-file-pdf-o:before {
+  content: "";
 }
 
 /* line 468, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-maxcdn:before {
-  content: "\f136";
+.fa-file-word-o:before {
+  content: "";
 }
 
 /* line 469, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-medapps:before {
-  content: "\f3c6";
+.fa-file-excel-o:before {
+  content: "";
 }
 
 /* line 470, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-medium:before {
-  content: "\f23a";
+.fa-file-powerpoint-o:before {
+  content: "";
 }
 
 /* line 471, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-medium-m:before {
-  content: "\f3c7";
-}
-
-/* line 472, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-medkit:before {
-  content: "\f0fa";
-}
-
-/* line 473, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-medrt:before {
-  content: "\f3c8";
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "";
 }
 
 /* line 474, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-meetup:before {
-  content: "\f2e0";
-}
-
-/* line 475, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-meh:before {
-  content: "\f11a";
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "";
 }
 
 /* line 476, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mercury:before {
-  content: "\f223";
-}
-
-/* line 477, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-microchip:before {
-  content: "\f2db";
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "";
 }
 
 /* line 478, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-microphone:before {
-  content: "\f130";
-}
-
-/* line 479, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-microphone-slash:before {
-  content: "\f131";
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "";
 }
 
 /* line 480, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-microsoft:before {
-  content: "\f3ca";
+.fa-file-code-o:before {
+  content: "";
 }
 
 /* line 481, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-minus:before {
-  content: "\f068";
+.fa-vine:before {
+  content: "";
 }
 
 /* line 482, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-minus-circle:before {
-  content: "\f056";
+.fa-codepen:before {
+  content: "";
 }
 
 /* line 483, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-minus-square:before {
-  content: "\f146";
+.fa-jsfiddle:before {
+  content: "";
 }
 
 /* line 484, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mix:before {
-  content: "\f3cb";
-}
-
-/* line 485, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mixcloud:before {
-  content: "\f289";
-}
-
-/* line 486, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mizuni:before {
-  content: "\f3cc";
-}
-
-/* line 487, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mobile:before {
-  content: "\f10b";
-}
-
-/* line 488, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mobile-alt:before {
-  content: "\f3cd";
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "";
 }
 
 /* line 489, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-modx:before {
-  content: "\f285";
+.fa-circle-o-notch:before {
+  content: "";
 }
 
 /* line 490, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-monero:before {
-  content: "\f3d0";
-}
-
-/* line 491, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-money-bill-alt:before {
-  content: "\f3d1";
+.fa-ra:before,
+.fa-rebel:before {
+  content: "";
 }
 
 /* line 492, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-moon:before {
-  content: "\f186";
-}
-
-/* line 493, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-motorcycle:before {
-  content: "\f21c";
+.fa-ge:before,
+.fa-empire:before {
+  content: "";
 }
 
 /* line 494, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-mouse-pointer:before {
-  content: "\f245";
+.fa-git-square:before {
+  content: "";
 }
 
 /* line 495, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-music:before {
-  content: "\f001";
+.fa-git:before {
+  content: "";
 }
 
 /* line 496, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-napster:before {
-  content: "\f3d2";
-}
-
-/* line 497, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-neuter:before {
-  content: "\f22c";
-}
-
-/* line 498, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-newspaper:before {
-  content: "\f1ea";
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+  content: "";
 }
 
 /* line 499, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-nintendo-switch:before {
-  content: "\f418";
+.fa-tencent-weibo:before {
+  content: "";
 }
 
 /* line 500, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-node:before {
-  content: "\f419";
+.fa-qq:before {
+  content: "";
 }
 
 /* line 501, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-node-js:before {
-  content: "\f3d3";
-}
-
-/* line 502, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-npm:before {
-  content: "\f3d4";
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "";
 }
 
 /* line 503, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ns8:before {
-  content: "\f3d5";
-}
-
-/* line 504, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-nutritionix:before {
-  content: "\f3d6";
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "";
 }
 
 /* line 505, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-object-group:before {
-  content: "\f247";
-}
-
-/* line 506, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-object-ungroup:before {
-  content: "\f248";
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "";
 }
 
 /* line 507, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-odnoklassniki:before {
-  content: "\f263";
+.fa-history:before {
+  content: "";
 }
 
 /* line 508, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-odnoklassniki-square:before {
-  content: "\f264";
+.fa-circle-thin:before {
+  content: "";
 }
 
 /* line 509, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-opencart:before {
-  content: "\f23d";
+.fa-header:before {
+  content: "";
 }
 
 /* line 510, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-openid:before {
-  content: "\f19b";
+.fa-paragraph:before {
+  content: "";
 }
 
 /* line 511, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-opera:before {
-  content: "\f26a";
+.fa-sliders:before {
+  content: "";
 }
 
 /* line 512, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-optin-monster:before {
-  content: "\f23c";
+.fa-share-alt:before {
+  content: "";
 }
 
 /* line 513, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-osi:before {
-  content: "\f41a";
+.fa-share-alt-square:before {
+  content: "";
 }
 
 /* line 514, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-outdent:before {
-  content: "\f03b";
+.fa-bomb:before {
+  content: "";
 }
 
 /* line 515, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-page4:before {
-  content: "\f3d7";
-}
-
-/* line 516, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pagelines:before {
-  content: "\f18c";
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "";
 }
 
 /* line 517, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-paint-brush:before {
-  content: "\f1fc";
+.fa-tty:before {
+  content: "";
 }
 
 /* line 518, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-palfed:before {
-  content: "\f3d8";
+.fa-binoculars:before {
+  content: "";
 }
 
 /* line 519, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-paper-plane:before {
-  content: "\f1d8";
+.fa-plug:before {
+  content: "";
 }
 
 /* line 520, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-paperclip:before {
-  content: "\f0c6";
+.fa-slideshare:before {
+  content: "";
 }
 
 /* line 521, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-paragraph:before {
-  content: "\f1dd";
+.fa-twitch:before {
+  content: "";
 }
 
 /* line 522, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-paste:before {
-  content: "\f0ea";
+.fa-yelp:before {
+  content: "";
 }
 
 /* line 523, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-patreon:before {
-  content: "\f3d9";
+.fa-newspaper-o:before {
+  content: "";
 }
 
 /* line 524, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pause:before {
-  content: "\f04c";
+.fa-wifi:before {
+  content: "";
 }
 
 /* line 525, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pause-circle:before {
-  content: "\f28b";
+.fa-calculator:before {
+  content: "";
 }
 
 /* line 526, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-paw:before {
-  content: "\f1b0";
+.fa-paypal:before {
+  content: "";
 }
 
 /* line 527, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-paypal:before {
-  content: "\f1ed";
+.fa-google-wallet:before {
+  content: "";
 }
 
 /* line 528, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pen-square:before {
-  content: "\f14b";
+.fa-cc-visa:before {
+  content: "";
 }
 
 /* line 529, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pencil-alt:before {
-  content: "\f303";
+.fa-cc-mastercard:before {
+  content: "";
 }
 
 /* line 530, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-percent:before {
-  content: "\f295";
+.fa-cc-discover:before {
+  content: "";
 }
 
 /* line 531, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-periscope:before {
-  content: "\f3da";
+.fa-cc-amex:before {
+  content: "";
 }
 
 /* line 532, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-phabricator:before {
-  content: "\f3db";
+.fa-cc-paypal:before {
+  content: "";
 }
 
 /* line 533, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-phoenix-framework:before {
-  content: "\f3dc";
+.fa-cc-stripe:before {
+  content: "";
 }
 
 /* line 534, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-phone:before {
-  content: "\f095";
+.fa-bell-slash:before {
+  content: "";
 }
 
 /* line 535, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-phone-square:before {
-  content: "\f098";
+.fa-bell-slash-o:before {
+  content: "";
 }
 
 /* line 536, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-phone-volume:before {
-  content: "\f2a0";
+.fa-trash:before {
+  content: "";
 }
 
 /* line 537, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-php:before {
-  content: "\f457";
+.fa-copyright:before {
+  content: "";
 }
 
 /* line 538, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pied-piper:before {
-  content: "\f2ae";
+.fa-at:before {
+  content: "";
 }
 
 /* line 539, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pied-piper-alt:before {
-  content: "\f1a8";
+.fa-eyedropper:before {
+  content: "";
 }
 
 /* line 540, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pied-piper-pp:before {
-  content: "\f1a7";
+.fa-paint-brush:before {
+  content: "";
 }
 
 /* line 541, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pinterest:before {
-  content: "\f0d2";
+.fa-birthday-cake:before {
+  content: "";
 }
 
 /* line 542, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pinterest-p:before {
-  content: "\f231";
+.fa-area-chart:before {
+  content: "";
 }
 
 /* line 543, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pinterest-square:before {
-  content: "\f0d3";
+.fa-pie-chart:before {
+  content: "";
 }
 
 /* line 544, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-plane:before {
-  content: "\f072";
+.fa-line-chart:before {
+  content: "";
 }
 
 /* line 545, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-play:before {
-  content: "\f04b";
+.fa-lastfm:before {
+  content: "";
 }
 
 /* line 546, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-play-circle:before {
-  content: "\f144";
+.fa-lastfm-square:before {
+  content: "";
 }
 
 /* line 547, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-playstation:before {
-  content: "\f3df";
+.fa-toggle-off:before {
+  content: "";
 }
 
 /* line 548, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-plug:before {
-  content: "\f1e6";
+.fa-toggle-on:before {
+  content: "";
 }
 
 /* line 549, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-plus:before {
-  content: "\f067";
+.fa-bicycle:before {
+  content: "";
 }
 
 /* line 550, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-plus-circle:before {
-  content: "\f055";
+.fa-bus:before {
+  content: "";
 }
 
 /* line 551, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-plus-square:before {
-  content: "\f0fe";
+.fa-ioxhost:before {
+  content: "";
 }
 
 /* line 552, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-podcast:before {
-  content: "\f2ce";
+.fa-angellist:before {
+  content: "";
 }
 
 /* line 553, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pound-sign:before {
-  content: "\f154";
+.fa-cc:before {
+  content: "";
 }
 
 /* line 554, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-power-off:before {
-  content: "\f011";
-}
-
-/* line 555, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-print:before {
-  content: "\f02f";
-}
-
-/* line 556, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-product-hunt:before {
-  content: "\f288";
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "";
 }
 
 /* line 557, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-pushed:before {
-  content: "\f3e1";
+.fa-meanpath:before {
+  content: "";
 }
 
 /* line 558, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-puzzle-piece:before {
-  content: "\f12e";
+.fa-buysellads:before {
+  content: "";
 }
 
 /* line 559, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-python:before {
-  content: "\f3e2";
+.fa-connectdevelop:before {
+  content: "";
 }
 
 /* line 560, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-qq:before {
-  content: "\f1d6";
+.fa-dashcube:before {
+  content: "";
 }
 
 /* line 561, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-qrcode:before {
-  content: "\f029";
+.fa-forumbee:before {
+  content: "";
 }
 
 /* line 562, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-question:before {
-  content: "\f128";
+.fa-leanpub:before {
+  content: "";
 }
 
 /* line 563, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-question-circle:before {
-  content: "\f059";
+.fa-sellsy:before {
+  content: "";
 }
 
 /* line 564, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-quidditch:before {
-  content: "\f458";
+.fa-shirtsinbulk:before {
+  content: "";
 }
 
 /* line 565, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-quinscape:before {
-  content: "\f459";
+.fa-simplybuilt:before {
+  content: "";
 }
 
 /* line 566, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-quora:before {
-  content: "\f2c4";
+.fa-skyatlas:before {
+  content: "";
 }
 
 /* line 567, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-quote-left:before {
-  content: "\f10d";
+.fa-cart-plus:before {
+  content: "";
 }
 
 /* line 568, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-quote-right:before {
-  content: "\f10e";
+.fa-cart-arrow-down:before {
+  content: "";
 }
 
 /* line 569, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-random:before {
-  content: "\f074";
+.fa-diamond:before {
+  content: "";
 }
 
 /* line 570, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ravelry:before {
-  content: "\f2d9";
+.fa-ship:before {
+  content: "";
 }
 
 /* line 571, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-react:before {
-  content: "\f41b";
+.fa-user-secret:before {
+  content: "";
 }
 
 /* line 572, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-rebel:before {
-  content: "\f1d0";
+.fa-motorcycle:before {
+  content: "";
 }
 
 /* line 573, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-recycle:before {
-  content: "\f1b8";
+.fa-street-view:before {
+  content: "";
 }
 
 /* line 574, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-red-river:before {
-  content: "\f3e3";
+.fa-heartbeat:before {
+  content: "";
 }
 
 /* line 575, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-reddit:before {
-  content: "\f1a1";
+.fa-venus:before {
+  content: "";
 }
 
 /* line 576, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-reddit-alien:before {
-  content: "\f281";
+.fa-mars:before {
+  content: "";
 }
 
 /* line 577, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-reddit-square:before {
-  content: "\f1a2";
+.fa-mercury:before {
+  content: "";
 }
 
 /* line 578, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-redo:before {
-  content: "\f01e";
-}
-
-/* line 579, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-redo-alt:before {
-  content: "\f2f9";
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "";
 }
 
 /* line 580, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-registered:before {
-  content: "\f25d";
+.fa-transgender-alt:before {
+  content: "";
 }
 
 /* line 581, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-rendact:before {
-  content: "\f3e4";
+.fa-venus-double:before {
+  content: "";
 }
 
 /* line 582, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-renren:before {
-  content: "\f18b";
+.fa-mars-double:before {
+  content: "";
 }
 
 /* line 583, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-reply:before {
-  content: "\f3e5";
+.fa-venus-mars:before {
+  content: "";
 }
 
 /* line 584, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-reply-all:before {
-  content: "\f122";
+.fa-mars-stroke:before {
+  content: "";
 }
 
 /* line 585, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-replyd:before {
-  content: "\f3e6";
+.fa-mars-stroke-v:before {
+  content: "";
 }
 
 /* line 586, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-resolving:before {
-  content: "\f3e7";
+.fa-mars-stroke-h:before {
+  content: "";
 }
 
 /* line 587, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-retweet:before {
-  content: "\f079";
+.fa-neuter:before {
+  content: "";
 }
 
 /* line 588, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-road:before {
-  content: "\f018";
+.fa-genderless:before {
+  content: "";
 }
 
 /* line 589, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-rocket:before {
-  content: "\f135";
+.fa-facebook-official:before {
+  content: "";
 }
 
 /* line 590, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-rocketchat:before {
-  content: "\f3e8";
+.fa-pinterest-p:before {
+  content: "";
 }
 
 /* line 591, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-rockrms:before {
-  content: "\f3e9";
+.fa-whatsapp:before {
+  content: "";
 }
 
 /* line 592, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-rss:before {
-  content: "\f09e";
+.fa-server:before {
+  content: "";
 }
 
 /* line 593, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-rss-square:before {
-  content: "\f143";
+.fa-user-plus:before {
+  content: "";
 }
 
 /* line 594, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ruble-sign:before {
-  content: "\f158";
+.fa-user-times:before {
+  content: "";
 }
 
 /* line 595, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-rupee-sign:before {
-  content: "\f156";
-}
-
-/* line 596, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-safari:before {
-  content: "\f267";
+.fa-hotel:before,
+.fa-bed:before {
+  content: "";
 }
 
 /* line 597, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sass:before {
-  content: "\f41e";
+.fa-viacoin:before {
+  content: "";
 }
 
 /* line 598, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-save:before {
-  content: "\f0c7";
+.fa-train:before {
+  content: "";
 }
 
 /* line 599, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-schlix:before {
-  content: "\f3ea";
+.fa-subway:before {
+  content: "";
 }
 
 /* line 600, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-scribd:before {
-  content: "\f28a";
+.fa-medium:before {
+  content: "";
 }
 
 /* line 601, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-search:before {
-  content: "\f002";
-}
-
-/* line 602, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-search-minus:before {
-  content: "\f010";
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "";
 }
 
 /* line 603, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-search-plus:before {
-  content: "\f00e";
+.fa-optin-monster:before {
+  content: "";
 }
 
 /* line 604, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-searchengin:before {
-  content: "\f3eb";
+.fa-opencart:before {
+  content: "";
 }
 
 /* line 605, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sellcast:before {
-  content: "\f2da";
+.fa-expeditedssl:before {
+  content: "";
 }
 
 /* line 606, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sellsy:before {
-  content: "\f213";
-}
-
-/* line 607, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-server:before {
-  content: "\f233";
+.fa-battery-4:before,
+.fa-battery-full:before {
+  content: "";
 }
 
 /* line 608, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-servicestack:before {
-  content: "\f3ec";
-}
-
-/* line 609, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-share:before {
-  content: "\f064";
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "";
 }
 
 /* line 610, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-share-alt:before {
-  content: "\f1e0";
-}
-
-/* line 611, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-share-alt-square:before {
-  content: "\f1e1";
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "";
 }
 
 /* line 612, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-share-square:before {
-  content: "\f14d";
-}
-
-/* line 613, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-shekel-sign:before {
-  content: "\f20b";
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "";
 }
 
 /* line 614, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-shield-alt:before {
-  content: "\f3ed";
-}
-
-/* line 615, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ship:before {
-  content: "\f21a";
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "";
 }
 
 /* line 616, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-shirtsinbulk:before {
-  content: "\f214";
+.fa-mouse-pointer:before {
+  content: "";
 }
 
 /* line 617, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-shopping-bag:before {
-  content: "\f290";
+.fa-i-cursor:before {
+  content: "";
 }
 
 /* line 618, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-shopping-basket:before {
-  content: "\f291";
+.fa-object-group:before {
+  content: "";
 }
 
 /* line 619, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-shopping-cart:before {
-  content: "\f07a";
+.fa-object-ungroup:before {
+  content: "";
 }
 
 /* line 620, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-shower:before {
-  content: "\f2cc";
+.fa-sticky-note:before {
+  content: "";
 }
 
 /* line 621, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sign-in-alt:before {
-  content: "\f2f6";
+.fa-sticky-note-o:before {
+  content: "";
 }
 
 /* line 622, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sign-language:before {
-  content: "\f2a7";
+.fa-cc-jcb:before {
+  content: "";
 }
 
 /* line 623, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sign-out-alt:before {
-  content: "\f2f5";
+.fa-cc-diners-club:before {
+  content: "";
 }
 
 /* line 624, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-signal:before {
-  content: "\f012";
+.fa-clone:before {
+  content: "";
 }
 
 /* line 625, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-simplybuilt:before {
-  content: "\f215";
+.fa-balance-scale:before {
+  content: "";
 }
 
 /* line 626, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sistrix:before {
-  content: "\f3ee";
+.fa-hourglass-o:before {
+  content: "";
 }
 
 /* line 627, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sitemap:before {
-  content: "\f0e8";
-}
-
-/* line 628, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-skyatlas:before {
-  content: "\f216";
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "";
 }
 
 /* line 629, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-skype:before {
-  content: "\f17e";
-}
-
-/* line 630, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-slack:before {
-  content: "\f198";
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "";
 }
 
 /* line 631, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-slack-hash:before {
-  content: "\f3ef";
-}
-
-/* line 632, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sliders-h:before {
-  content: "\f1de";
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "";
 }
 
 /* line 633, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-slideshare:before {
-  content: "\f1e7";
+.fa-hourglass:before {
+  content: "";
 }
 
 /* line 634, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-smile:before {
-  content: "\f118";
-}
-
-/* line 635, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-snapchat:before {
-  content: "\f2ab";
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "";
 }
 
 /* line 636, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-snapchat-ghost:before {
-  content: "\f2ac";
-}
-
-/* line 637, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-snapchat-square:before {
-  content: "\f2ad";
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "";
 }
 
 /* line 638, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-snowflake:before {
-  content: "\f2dc";
+.fa-hand-scissors-o:before {
+  content: "";
 }
 
 /* line 639, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort:before {
-  content: "\f0dc";
+.fa-hand-lizard-o:before {
+  content: "";
 }
 
 /* line 640, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-alpha-down:before {
-  content: "\f15d";
+.fa-hand-spock-o:before {
+  content: "";
 }
 
 /* line 641, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-alpha-up:before {
-  content: "\f15e";
+.fa-hand-pointer-o:before {
+  content: "";
 }
 
 /* line 642, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-amount-down:before {
-  content: "\f160";
+.fa-hand-peace-o:before {
+  content: "";
 }
 
 /* line 643, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-amount-up:before {
-  content: "\f161";
+.fa-trademark:before {
+  content: "";
 }
 
 /* line 644, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-down:before {
-  content: "\f0dd";
+.fa-registered:before {
+  content: "";
 }
 
 /* line 645, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-numeric-down:before {
-  content: "\f162";
+.fa-creative-commons:before {
+  content: "";
 }
 
 /* line 646, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-numeric-up:before {
-  content: "\f163";
+.fa-gg:before {
+  content: "";
 }
 
 /* line 647, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-up:before {
-  content: "\f0de";
+.fa-gg-circle:before {
+  content: "";
 }
 
 /* line 648, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-soundcloud:before {
-  content: "\f1be";
+.fa-tripadvisor:before {
+  content: "";
 }
 
 /* line 649, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-space-shuttle:before {
-  content: "\f197";
+.fa-odnoklassniki:before {
+  content: "";
 }
 
 /* line 650, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-speakap:before {
-  content: "\f3f3";
+.fa-odnoklassniki-square:before {
+  content: "";
 }
 
 /* line 651, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-spinner:before {
-  content: "\f110";
+.fa-get-pocket:before {
+  content: "";
 }
 
 /* line 652, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-spotify:before {
-  content: "\f1bc";
+.fa-wikipedia-w:before {
+  content: "";
 }
 
 /* line 653, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-square:before {
-  content: "\f0c8";
+.fa-safari:before {
+  content: "";
 }
 
 /* line 654, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-square-full:before {
-  content: "\f45c";
+.fa-chrome:before {
+  content: "";
 }
 
 /* line 655, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stack-exchange:before {
-  content: "\f18d";
+.fa-firefox:before {
+  content: "";
 }
 
 /* line 656, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stack-overflow:before {
-  content: "\f16c";
+.fa-opera:before {
+  content: "";
 }
 
 /* line 657, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-star:before {
-  content: "\f005";
+.fa-internet-explorer:before {
+  content: "";
 }
 
 /* line 658, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-star-half:before {
-  content: "\f089";
-}
-
-/* line 659, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-staylinked:before {
-  content: "\f3f5";
+.fa-tv:before,
+.fa-television:before {
+  content: "";
 }
 
 /* line 660, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-steam:before {
-  content: "\f1b6";
+.fa-contao:before {
+  content: "";
 }
 
 /* line 661, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-steam-square:before {
-  content: "\f1b7";
+.fa-500px:before {
+  content: "";
 }
 
 /* line 662, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-steam-symbol:before {
-  content: "\f3f6";
+.fa-amazon:before {
+  content: "";
 }
 
 /* line 663, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-step-backward:before {
-  content: "\f048";
+.fa-calendar-plus-o:before {
+  content: "";
 }
 
 /* line 664, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-step-forward:before {
-  content: "\f051";
+.fa-calendar-minus-o:before {
+  content: "";
 }
 
 /* line 665, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stethoscope:before {
-  content: "\f0f1";
+.fa-calendar-times-o:before {
+  content: "";
 }
 
 /* line 666, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sticker-mule:before {
-  content: "\f3f7";
+.fa-calendar-check-o:before {
+  content: "";
 }
 
 /* line 667, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sticky-note:before {
-  content: "\f249";
+.fa-industry:before {
+  content: "";
 }
 
 /* line 668, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stop:before {
-  content: "\f04d";
+.fa-map-pin:before {
+  content: "";
 }
 
 /* line 669, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stop-circle:before {
-  content: "\f28d";
+.fa-map-signs:before {
+  content: "";
 }
 
 /* line 670, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stopwatch:before {
-  content: "\f2f2";
+.fa-map-o:before {
+  content: "";
 }
 
 /* line 671, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-strava:before {
-  content: "\f428";
+.fa-map:before {
+  content: "";
 }
 
 /* line 672, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-street-view:before {
-  content: "\f21d";
+.fa-commenting:before {
+  content: "";
 }
 
 /* line 673, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-strikethrough:before {
-  content: "\f0cc";
+.fa-commenting-o:before {
+  content: "";
 }
 
 /* line 674, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stripe:before {
-  content: "\f429";
+.fa-houzz:before {
+  content: "";
 }
 
 /* line 675, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stripe-s:before {
-  content: "\f42a";
+.fa-vimeo:before {
+  content: "";
 }
 
 /* line 676, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-studiovinari:before {
-  content: "\f3f8";
+.fa-black-tie:before {
+  content: "";
 }
 
 /* line 677, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stumbleupon:before {
-  content: "\f1a4";
-}
-
-/* line 678, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-stumbleupon-circle:before {
-  content: "\f1a3";
-}
-
-/* line 679, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-subscript:before {
-  content: "\f12c";
-}
-
-/* line 680, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-subway:before {
-  content: "\f239";
-}
-
-/* line 681, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-suitcase:before {
-  content: "\f0f2";
-}
-
-/* line 682, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sun:before {
-  content: "\f185";
-}
-
-/* line 683, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-superpowers:before {
-  content: "\f2dd";
-}
-
-/* line 684, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-superscript:before {
-  content: "\f12b";
-}
-
-/* line 685, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-supple:before {
-  content: "\f3f9";
-}
-
-/* line 686, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sync:before {
-  content: "\f021";
-}
-
-/* line 687, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-sync-alt:before {
-  content: "\f2f1";
-}
-
-/* line 688, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-table:before {
-  content: "\f0ce";
-}
-
-/* line 689, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-table-tennis:before {
-  content: "\f45d";
-}
-
-/* line 690, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tablet:before {
-  content: "\f10a";
-}
-
-/* line 691, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tablet-alt:before {
-  content: "\f3fa";
-}
-
-/* line 692, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tachometer-alt:before {
-  content: "\f3fd";
-}
-
-/* line 693, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tag:before {
-  content: "\f02b";
-}
-
-/* line 694, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tags:before {
-  content: "\f02c";
-}
-
-/* line 695, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tasks:before {
-  content: "\f0ae";
-}
-
-/* line 696, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-taxi:before {
-  content: "\f1ba";
-}
-
-/* line 697, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-telegram:before {
-  content: "\f2c6";
-}
-
-/* line 698, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-telegram-plane:before {
-  content: "\f3fe";
-}
-
-/* line 699, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tencent-weibo:before {
-  content: "\f1d5";
-}
-
-/* line 700, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-terminal:before {
-  content: "\f120";
-}
-
-/* line 701, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-text-height:before {
-  content: "\f034";
-}
-
-/* line 702, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-text-width:before {
-  content: "\f035";
-}
-
-/* line 703, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-th:before {
-  content: "\f00a";
-}
-
-/* line 704, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-th-large:before {
-  content: "\f009";
-}
-
-/* line 705, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-th-list:before {
-  content: "\f00b";
-}
-
-/* line 706, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-themeisle:before {
-  content: "\f2b2";
-}
-
-/* line 707, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-thermometer-empty:before {
-  content: "\f2cb";
-}
-
-/* line 708, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-thermometer-full:before {
-  content: "\f2c7";
-}
-
-/* line 709, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-thermometer-half:before {
-  content: "\f2c9";
-}
-
-/* line 710, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-thermometer-quarter:before {
-  content: "\f2ca";
-}
-
-/* line 711, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-thermometer-three-quarters:before {
-  content: "\f2c8";
-}
-
-/* line 712, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-thumbs-down:before {
-  content: "\f165";
-}
-
-/* line 713, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-thumbs-up:before {
-  content: "\f164";
-}
-
-/* line 714, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-thumbtack:before {
-  content: "\f08d";
-}
-
-/* line 715, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ticket-alt:before {
-  content: "\f3ff";
-}
-
-/* line 716, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-times:before {
-  content: "\f00d";
-}
-
-/* line 717, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-times-circle:before {
-  content: "\f057";
-}
-
-/* line 718, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tint:before {
-  content: "\f043";
-}
-
-/* line 719, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-toggle-off:before {
-  content: "\f204";
-}
-
-/* line 720, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-toggle-on:before {
-  content: "\f205";
-}
-
-/* line 721, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-trademark:before {
-  content: "\f25c";
-}
-
-/* line 722, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-train:before {
-  content: "\f238";
-}
-
-/* line 723, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-transgender:before {
-  content: "\f224";
-}
-
-/* line 724, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-transgender-alt:before {
-  content: "\f225";
-}
-
-/* line 725, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-trash:before {
-  content: "\f1f8";
-}
-
-/* line 726, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-trash-alt:before {
-  content: "\f2ed";
-}
-
-/* line 727, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tree:before {
-  content: "\f1bb";
-}
-
-/* line 728, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-trello:before {
-  content: "\f181";
-}
-
-/* line 729, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tripadvisor:before {
-  content: "\f262";
-}
-
-/* line 730, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-trophy:before {
-  content: "\f091";
-}
-
-/* line 731, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-truck:before {
-  content: "\f0d1";
-}
-
-/* line 732, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tty:before {
-  content: "\f1e4";
-}
-
-/* line 733, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tumblr:before {
-  content: "\f173";
-}
-
-/* line 734, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tumblr-square:before {
-  content: "\f174";
-}
-
-/* line 735, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-tv:before {
-  content: "\f26c";
-}
-
-/* line 736, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-twitch:before {
-  content: "\f1e8";
-}
-
-/* line 737, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-twitter:before {
-  content: "\f099";
-}
-
-/* line 738, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-twitter-square:before {
-  content: "\f081";
-}
-
-/* line 739, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-typo3:before {
-  content: "\f42b";
-}
-
-/* line 740, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-uber:before {
-  content: "\f402";
-}
-
-/* line 741, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-uikit:before {
-  content: "\f403";
-}
-
-/* line 742, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-umbrella:before {
-  content: "\f0e9";
-}
-
-/* line 743, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-underline:before {
-  content: "\f0cd";
-}
-
-/* line 744, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-undo:before {
-  content: "\f0e2";
-}
-
-/* line 745, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-undo-alt:before {
-  content: "\f2ea";
-}
-
-/* line 746, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-uniregistry:before {
-  content: "\f404";
-}
-
-/* line 747, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-universal-access:before {
-  content: "\f29a";
-}
-
-/* line 748, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-university:before {
-  content: "\f19c";
-}
-
-/* line 749, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-unlink:before {
-  content: "\f127";
-}
-
-/* line 750, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-unlock:before {
-  content: "\f09c";
-}
-
-/* line 751, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-unlock-alt:before {
-  content: "\f13e";
-}
-
-/* line 752, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-untappd:before {
-  content: "\f405";
-}
-
-/* line 753, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-upload:before {
-  content: "\f093";
-}
-
-/* line 754, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-usb:before {
-  content: "\f287";
-}
-
-/* line 755, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-user:before {
-  content: "\f007";
-}
-
-/* line 756, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-user-circle:before {
-  content: "\f2bd";
-}
-
-/* line 757, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-user-md:before {
-  content: "\f0f0";
-}
-
-/* line 758, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-user-plus:before {
-  content: "\f234";
-}
-
-/* line 759, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-user-secret:before {
-  content: "\f21b";
-}
-
-/* line 760, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-user-times:before {
-  content: "\f235";
-}
-
-/* line 761, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-users:before {
-  content: "\f0c0";
-}
-
-/* line 762, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-ussunnah:before {
-  content: "\f407";
-}
-
-/* line 763, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-utensil-spoon:before {
-  content: "\f2e5";
-}
-
-/* line 764, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-utensils:before {
-  content: "\f2e7";
-}
-
-/* line 765, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-vaadin:before {
-  content: "\f408";
-}
-
-/* line 766, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-venus:before {
-  content: "\f221";
-}
-
-/* line 767, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-venus-double:before {
-  content: "\f226";
-}
-
-/* line 768, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-venus-mars:before {
-  content: "\f228";
-}
-
-/* line 769, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-viacoin:before {
-  content: "\f237";
-}
-
-/* line 770, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-viadeo:before {
-  content: "\f2a9";
-}
-
-/* line 771, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-viadeo-square:before {
-  content: "\f2aa";
-}
-
-/* line 772, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-viber:before {
-  content: "\f409";
-}
-
-/* line 773, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-video:before {
-  content: "\f03d";
-}
-
-/* line 774, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-vimeo:before {
-  content: "\f40a";
-}
-
-/* line 775, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-vimeo-square:before {
-  content: "\f194";
-}
-
-/* line 776, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-vimeo-v:before {
-  content: "\f27d";
-}
-
-/* line 777, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-vine:before {
-  content: "\f1ca";
-}
-
-/* line 778, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-vk:before {
-  content: "\f189";
-}
-
-/* line 779, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-vnv:before {
-  content: "\f40b";
-}
-
-/* line 780, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-volleyball-ball:before {
-  content: "\f45f";
-}
-
-/* line 781, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-volume-down:before {
-  content: "\f027";
-}
-
-/* line 782, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-volume-off:before {
-  content: "\f026";
-}
-
-/* line 783, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-volume-up:before {
-  content: "\f028";
-}
-
-/* line 784, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-vuejs:before {
-  content: "\f41f";
-}
-
-/* line 785, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-weibo:before {
-  content: "\f18a";
-}
-
-/* line 786, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-weixin:before {
-  content: "\f1d7";
-}
-
-/* line 787, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-whatsapp:before {
-  content: "\f232";
-}
-
-/* line 788, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-whatsapp-square:before {
-  content: "\f40c";
-}
-
-/* line 789, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-wheelchair:before {
-  content: "\f193";
-}
-
-/* line 790, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-whmcs:before {
-  content: "\f40d";
-}
-
-/* line 791, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-wifi:before {
-  content: "\f1eb";
-}
-
-/* line 792, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-wikipedia-w:before {
-  content: "\f266";
-}
-
-/* line 793, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-window-close:before {
-  content: "\f410";
-}
-
-/* line 794, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-window-maximize:before {
-  content: "\f2d0";
-}
-
-/* line 795, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-window-minimize:before {
-  content: "\f2d1";
-}
-
-/* line 796, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-window-restore:before {
-  content: "\f2d2";
-}
-
-/* line 797, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-windows:before {
-  content: "\f17a";
-}
-
-/* line 798, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-won-sign:before {
-  content: "\f159";
-}
-
-/* line 799, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-wordpress:before {
-  content: "\f19a";
-}
-
-/* line 800, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-wordpress-simple:before {
-  content: "\f411";
-}
-
-/* line 801, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-wpbeginner:before {
-  content: "\f297";
-}
-
-/* line 802, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-wpexplorer:before {
-  content: "\f2de";
-}
-
-/* line 803, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-wpforms:before {
-  content: "\f298";
-}
-
-/* line 804, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-wrench:before {
-  content: "\f0ad";
-}
-
-/* line 805, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-xbox:before {
-  content: "\f412";
-}
-
-/* line 806, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-xing:before {
-  content: "\f168";
-}
-
-/* line 807, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-xing-square:before {
-  content: "\f169";
-}
-
-/* line 808, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-y-combinator:before {
-  content: "\f23b";
-}
-
-/* line 809, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-yahoo:before {
-  content: "\f19e";
-}
-
-/* line 810, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-yandex:before {
-  content: "\f413";
-}
-
-/* line 811, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-yandex-international:before {
-  content: "\f414";
-}
-
-/* line 812, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-yelp:before {
-  content: "\f1e9";
-}
-
-/* line 813, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-yen-sign:before {
-  content: "\f157";
-}
-
-/* line 814, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-yoast:before {
-  content: "\f2b1";
-}
-
-/* line 815, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-youtube:before {
-  content: "\f167";
-}
-
-/* line 816, FED/sass/vendor/bower_components/font-awesome/scss/_icons.scss */
-.fa-youtube-square:before {
-  content: "\f431";
-}
-
-/* line 4, FED/sass/vendor/bower_components/font-awesome/scss/_screen-reader.scss */
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/* line 48, FED/sass/vendor/bower_components/font-awesome/scss/_mixins.scss */
-.sr-only-focusable:active, .sr-only-focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
+.fa-fonticons:before {
+  content: "";
 }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */

@@ -1,19 +1,25 @@
-﻿<ul class="nav nav-stacked">
-    @foreach (var item in Model.Items)
-    {
-        if (item.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
-        {
-            <li class="divider"></li>
-        }
-        <li>
-            <a href="@item.Url" target="@item.Target" title="@item.Item[Templates.Navigable.Fields.NavigationTitle]">
-                @if (!string.IsNullOrWhiteSpace(item.Item[Templates.LinkMenuItem.Fields.Icon]))
-                {
-                    <i class="fa fa-@item.Item[Templates.LinkMenuItem.Fields.Icon]"></i>@:&nbsp;
-                }
+﻿@using Sitecore.Feature.Navigation.Models
+@using Synthesis.Mvc.Extensions
+@model ILinkMenuItem
 
-                <span>@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)</span>
-            </a>
-        </li>
-    }
-</ul>
+<nav>
+    <ul class="nav @Model.AdditionalStyles.RawValue">
+        @foreach (var item in Model.Children.OfType<ILinkMenuItemItem>())
+        {
+            var divider = item.DividerBefore.Value ? "divider-left" : string.Empty;
+            <li class="@divider">
+            
+                <a href="@item.Url" target="@item.Link.Target" title="@item.Link.Text">
+                    @if (item.Icon.HasTextValue)
+                    {
+                        <i class="fa fa-@item.Icon.RawValue"></i>@:&nbsp;
+                    }
+                    else
+                    {
+                        @item.ShowTitle.Render()
+                    }
+                </a>
+            </li>
+        }
+    </ul>
+</nav>

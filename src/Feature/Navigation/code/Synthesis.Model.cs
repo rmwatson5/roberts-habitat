@@ -11,6 +11,18 @@
 namespace Sitecore.Feature.Navigation.Models {
     
     
+    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Link Menu template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{A06EE689-428F-4227-A728-20C7FE49F53E}", "IuSh1Z9rpz92COErZ0WkhrqLsU0=", "Sitecore.Feature.Navigation")]
+    public partial interface ILinkMenuItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
+        
+        /// <summary>Represents the Additional Styles field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("additional_styles")]
+        Synthesis.FieldTypes.Interfaces.ITextField AdditionalStyles {
+            get;
+        }
+    }
+    
     /// <summary>Represents the /sitecore/templates/Feature/Navigation/Link Menu Item template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
     [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{EBB60F61-CC55-4107-8D70-53E347BA2B3D}", "MCCqQ9rI72s+UGh29Wqp286pvN8=", "Sitecore.Feature.Navigation")]
@@ -18,7 +30,7 @@ namespace Sitecore.Feature.Navigation.Models {
         
         /// <summary>Represents the Link field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("link")]
-        Synthesis.FieldTypes.Interfaces.ITextField Link {
+        Synthesis.FieldTypes.Interfaces.IHyperlinkField Link {
             get;
         }
         
@@ -67,11 +79,76 @@ namespace Sitecore.Feature.Navigation.Models {
 namespace Sitecore.Feature.Navigation.Models.Concrete {
     
     
+    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Link Menu template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public partial class LinkMenu : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.Navigation.Models.ILinkMenuItem {
+        
+        private Synthesis.FieldTypes.TextField _additionalStyles;
+        
+        public LinkMenu(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public LinkMenu(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Link Menu";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{A06EE689-428F-4227-A728-20C7FE49F53E}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+        
+        /// <summary>Represents the Additional Styles field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("additional_styles")]
+        public Synthesis.FieldTypes.Interfaces.ITextField AdditionalStyles {
+            get {
+                if (_additionalStyles == null) {
+                    _additionalStyles = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{E3BA89BD-6678-47C2-AC95-92222C91870D}"], "/sitecore/templates/Feature/Navigation/Link Menu", "Additional Styles"), this.GetSearchFieldValue("additional_styles"));
+                }
+                return _additionalStyles;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public class LinkMenuInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{A06EE689-428F-4227-A728-20C7FE49F53E}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new LinkMenu(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new LinkMenu(searchFields);
+        }
+    }
+    
     /// <summary>Represents the /sitecore/templates/Feature/Navigation/Link Menu Item template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
     public partial class LinkMenuItem : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.Navigation.Models.ILinkMenuItemItem {
         
-        private Synthesis.FieldTypes.TextField _link;
+        private Synthesis.FieldTypes.HyperlinkField _link;
         
         private Synthesis.FieldTypes.TextField _icon;
         
@@ -114,10 +191,10 @@ namespace Sitecore.Feature.Navigation.Models.Concrete {
         
         /// <summary>Represents the Link field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("link")]
-        public Synthesis.FieldTypes.Interfaces.ITextField Link {
+        public Synthesis.FieldTypes.Interfaces.IHyperlinkField Link {
             get {
                 if (_link == null) {
-                    _link = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{841FE4FB-742F-4F0D-89F0-8A372A7A399D}"], "/sitecore/templates/Feature/Navigation/Link Menu Item", "Link"), this.GetSearchFieldValue("link"));
+                    _link = new Synthesis.FieldTypes.HyperlinkField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{841FE4FB-742F-4F0D-89F0-8A372A7A399D}"], "/sitecore/templates/Feature/Navigation/Link Menu Item", "Link"), this.GetSearchFieldValue("link"));
                 }
                 return _link;
             }

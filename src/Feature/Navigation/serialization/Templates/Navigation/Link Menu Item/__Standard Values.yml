@@ -9,6 +9,13 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "24050942-515c-4a6e-a121-19748b526988"
+      Hint: Show Title
+      Value: $name
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180912T000343Z
+    - ID: "841fe4fb-742f-4f0d-89f0-8a372a7a399d"
+      Hint: Link
+      Value: |
+        <link text="$name" linktype="external" url="" anchor="" target="" />

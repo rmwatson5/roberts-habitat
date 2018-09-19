@@ -1,0 +1,18 @@
+﻿---
+ID: "d7196209-6965-40c5-b09c-776f968c0a6c"
+Parent: "24a091bd-0f15-469e-88fc-385a521ba3ea"
+Template: "24a091bd-0f15-469e-88fc-385a521ba3ea"
+Path: /sitecore/templates/Project/Website/Local Content Folder/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180919T203709Z

@@ -28,6 +28,18 @@ namespace Sitecore.Project.Website.Models {
     [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{27C9E067-9FB2-438E-A695-8718703AEC5E}", "Praj3cIWovbgqY+z5lvxEWee1k4=", "Sitecore.Project.Website")]
     public partial interface IBasicWebpageItem : global::Sitecore.Feature.PageContent.Models.I_BaseWebpageItem {
     }
+    
+    /// <summary>Represents the /sitecore/templates/Project/Website/Global Folder template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{2F49739B-D15E-4673-AFBF-B20331227224}", "YAxmFofg/hYGSREE+GoH8gAtIR4=", "Sitecore.Project.Website")]
+    public partial interface IGlobalFolderItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Project/Website/Local Content Folder template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{24A091BD-0F15-469E-88FC-385A521BA3EA}", "v4UL3uFLHldQJbiuIJY1dvuJ/NA=", "Sitecore.Project.Website")]
+    public partial interface ILocalContentFolderItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
+    }
 }
 
 //------------------------------------------------------------------------------
@@ -352,6 +364,110 @@ namespace Sitecore.Project.Website.Models.Concrete {
         
         public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
             return new BasicWebpage(searchFields);
+        }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Project/Website/Global Folder template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public partial class GlobalFolder : global::Synthesis.StandardTemplateItem, global::Sitecore.Project.Website.Models.IGlobalFolderItem {
+        
+        public GlobalFolder(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public GlobalFolder(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Global Folder";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{2F49739B-D15E-4673-AFBF-B20331227224}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public class GlobalFolderInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{2F49739B-D15E-4673-AFBF-B20331227224}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new GlobalFolder(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new GlobalFolder(searchFields);
+        }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Project/Website/Local Content Folder template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public partial class LocalContentFolder : global::Synthesis.StandardTemplateItem, global::Sitecore.Project.Website.Models.ILocalContentFolderItem {
+        
+        public LocalContentFolder(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public LocalContentFolder(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Local Content Folder";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{24A091BD-0F15-469E-88FC-385A521BA3EA}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public class LocalContentFolderInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{24A091BD-0F15-469E-88FC-385A521BA3EA}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new LocalContentFolder(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new LocalContentFolder(searchFields);
         }
     }
 }
