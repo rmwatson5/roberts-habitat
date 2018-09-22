@@ -124,6 +124,30 @@ namespace Sitecore.Feature.Navigation.Models {
             get;
         }
     }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Search Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{05AF8C4B-0C11-4911-B3D5-02624117AA05}", "25iDSv79na/jVGAzj9oB0iZxv/s=", "Sitecore.Feature.Navigation")]
+    public partial interface ISearchSettingsItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
+        
+        /// <summary>Represents the Prompt Text field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("prompt_text")]
+        Synthesis.FieldTypes.Interfaces.ITextField PromptText {
+            get;
+        }
+        
+        /// <summary>Represents the Search Results Page field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("search_results_page")]
+        Synthesis.FieldTypes.Interfaces.IHyperlinkField SearchResultsPage {
+            get;
+        }
+        
+        /// <summary>Represents the Search field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("search")]
+        Synthesis.FieldTypes.Interfaces.ITextField Search {
+            get;
+        }
+    }
 }
 
 //------------------------------------------------------------------------------
@@ -539,6 +563,97 @@ namespace Sitecore.Feature.Navigation.Models.Concrete {
         
         public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
             return new LogoSettings(searchFields);
+        }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Search Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public partial class SearchSettings : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.Navigation.Models.ISearchSettingsItem {
+        
+        private Synthesis.FieldTypes.TextField _promptText;
+        
+        private Synthesis.FieldTypes.HyperlinkField _searchResultsPage;
+        
+        private Synthesis.FieldTypes.TextField _search;
+        
+        public SearchSettings(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public SearchSettings(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Search Settings";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{05AF8C4B-0C11-4911-B3D5-02624117AA05}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+        
+        /// <summary>Represents the Prompt Text field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("prompt_text")]
+        public Synthesis.FieldTypes.Interfaces.ITextField PromptText {
+            get {
+                if (_promptText == null) {
+                    _promptText = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{FC5111E8-843E-4A36-9A57-2E77585E0CBB}"], "/sitecore/templates/Feature/Navigation/Search Settings", "Prompt Text"), this.GetSearchFieldValue("prompt_text"));
+                }
+                return _promptText;
+            }
+        }
+        
+        /// <summary>Represents the Search Results Page field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("search_results_page")]
+        public Synthesis.FieldTypes.Interfaces.IHyperlinkField SearchResultsPage {
+            get {
+                if (_searchResultsPage == null) {
+                    _searchResultsPage = new Synthesis.FieldTypes.HyperlinkField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{E3C0CFE1-D7FD-4CBC-B7E6-2AA76F010F7F}"], "/sitecore/templates/Feature/Navigation/Search Settings", "Search Results Page"), this.GetSearchFieldValue("search_results_page"));
+                }
+                return _searchResultsPage;
+            }
+        }
+        
+        /// <summary>Represents the Search field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("search")]
+        public Synthesis.FieldTypes.Interfaces.ITextField Search {
+            get {
+                if (_search == null) {
+                    _search = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{4943C6E6-9338-4DF3-8A58-9A4A396CF435}"], "/sitecore/templates/Feature/Navigation/Search Settings", "Search"), this.GetSearchFieldValue("search"));
+                }
+                return _search;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public class SearchSettingsInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{05AF8C4B-0C11-4911-B3D5-02624117AA05}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new SearchSettings(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new SearchSettings(searchFields);
         }
     }
 }

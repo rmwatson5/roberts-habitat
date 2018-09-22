@@ -65,6 +65,12 @@ SharedFields:
           par=""
           ph="navbar-activity"
           uid="{E1A9FD27-C4C5-4657-832C-AB7291E7E065}" />
+        <r
+          ds="{EAD0C2AF-8C79-48DD-AB9E-58A195117CB5}"
+          id="{955427DF-55D6-4DE7-AE39-07E0739716DD}"
+          par=""
+          ph="navbar-activity"
+          uid="{A190F1D3-DCFB-446C-BD85-1315810AEAFB}" />
       </d>
     </r>
 Languages:

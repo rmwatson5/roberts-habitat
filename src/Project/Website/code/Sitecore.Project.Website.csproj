@@ -258,6 +258,7 @@
     <Content Include="Views\Navigation\LanguageSwitcher.cshtml" />
     <Content Include="Views\Frames\NavbarActivity.cshtml" />
     <Content Include="Views\Accounts\Login.cshtml" />
+    <Content Include="Views\Navigation\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

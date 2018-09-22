@@ -30,7 +30,7 @@ const FED_PATHS = {
 };
 
 // BED Paths
-const BED_ASSETS = "./src/Project/code";
+const BED_ASSETS = "./src/Project/Website/code";
 const BED_PATHS = {
     BED_RAZOR_SRC: BED_ASSETS + '/**/*.cshtml',
     BED_SASS_SITE_DEST: config.websiteRoot + '/css/',
