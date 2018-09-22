@@ -20,7 +20,7 @@ const FED_PATHS = {
 	FED_FONTS_SRC: [FED_ASSETS + '/fonts/*.*'],
 	FED_TEMPLATES_SRC: [FED_ASSETS + '/templates/*.ejs', FED_ASSETS + '/templates/**/*.ejs'],
     FED_SASS_SRC: [FED_ASSETS + '/sass/**/*.scss'],
-    FED_JS_SRC: [FED_ASSETS + '/js/**/*.js', '!' + FED_ASSETS + '/js/vendor/**/*', '!' + FED_ASSETS + '/js/json/**/*'],
+    FED_JS_SRC: [FED_ASSETS + '/js/*.js', FED_ASSETS + '/js/**/*.js', '!' + FED_ASSETS + '/js/vendor/**/*', '!' + FED_ASSETS + '/js/json/**/*'],
     FED_JSON_SRC: [FED_ASSETS + '/js/json/**/*'],
     FED_JS_VENDOR_SRC: [FED_ASSETS + '/js/vendor/*.js'],
     FED_SPEAK_SRC: [FED_ASSETS + '/client/**/*.*'],

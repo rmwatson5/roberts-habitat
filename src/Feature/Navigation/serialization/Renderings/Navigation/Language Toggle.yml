@@ -1,0 +1,27 @@
+﻿---
+ID: "6f4c86cf-3454-41d7-9f66-5b807b59f8c9"
+Parent: "ad5b48f0-da8a-4e2c-bffe-276c2ef186a2"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/Navigation/Language Toggle
+DB: master
+SharedFields:
+- ID: "2e51df70-d3e4-458c-b03a-95c734dd39e7"
+  Hint: Data source
+  Value: /sitecore/system/Languages
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Navigation/LanguageToggle.cshtml
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: LanguageSwitcher
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Navigation
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180920T231848Z

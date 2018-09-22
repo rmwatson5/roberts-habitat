@@ -8,7 +8,10 @@ SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Type: TreelistEx
-  Value: "{A06EE689-428F-4227-A728-20C7FE49F53E}"
+  Value: |
+    {A06EE689-428F-4227-A728-20C7FE49F53E}
+    {4C291EBD-78B0-4B55-80DC-96EF86763A5F}
+    {2F49739B-D15E-4673-AFBF-B20331227224}
 Languages:
 - Language: en
   Versions:

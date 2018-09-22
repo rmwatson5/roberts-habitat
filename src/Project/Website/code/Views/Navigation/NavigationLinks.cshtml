@@ -8,9 +8,9 @@
         {
             var divider = item.DividerBefore.Value ? "divider-left" : string.Empty;
             <li class="@divider">
-            
-                <a href="@item.Link.Href" target="@item.Link.Target" title="@item.Link.Text">
-                    @if (item.Icon.HasTextValue)
+                @using (item.Link.RenderWithBody(Html))
+                {
+                    if (item.Icon.HasTextValue)
                     {
                         <i class="fa fa-@item.Icon.RawValue"></i>@:&nbsp;
                     }
@@ -18,7 +18,7 @@
                     {
                         @item.ShowTitle.Render()
                     }
-                </a>
+                }
             </li>
         }
     </ul>

@@ -11,6 +11,60 @@
 namespace Sitecore.Feature.Navigation.Models {
     
     
+    /// <summary>Represents the /sitecore/templates/System/Language template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{F68F13A6-3395-426A-B9A1-FA2DC60D94EB}", "luPKy1Adt3XBGfFzYJonRcwyZOo=", "Sitecore.Feature.Navigation")]
+    public partial interface ILanguageItem : Synthesis.IStandardTemplateItem {
+        
+        /// <summary>Represents the Charset field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("charset")]
+        Synthesis.FieldTypes.Interfaces.ITextField Charset {
+            get;
+        }
+        
+        /// <summary>Represents the Code page field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("code_page")]
+        Synthesis.FieldTypes.Interfaces.ITextField Codepage {
+            get;
+        }
+        
+        /// <summary>Represents the Dictionary field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("dictionary")]
+        Synthesis.FieldTypes.Interfaces.ITextField Dictionary {
+            get;
+        }
+        
+        /// <summary>Represents the Encoding field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("encoding")]
+        Synthesis.FieldTypes.Interfaces.ITextField Encoding {
+            get;
+        }
+        
+        /// <summary>Represents the Fallback Language field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("fallback_language")]
+        Synthesis.FieldTypes.Interfaces.ITextField FallbackLanguage {
+            get;
+        }
+        
+        /// <summary>Represents the Iso field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("iso")]
+        Synthesis.FieldTypes.Interfaces.ITextField Iso {
+            get;
+        }
+        
+        /// <summary>Represents the Regional Iso Code field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("regional_iso_code")]
+        Synthesis.FieldTypes.Interfaces.ITextField RegionalIsoCode {
+            get;
+        }
+        
+        /// <summary>Represents the WorldLingo Language Identifier field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("worldlingo_language_identifier")]
+        Synthesis.FieldTypes.Interfaces.ITextField WorldLingoLanguageIdentifier {
+            get;
+        }
+    }
+    
     /// <summary>Represents the /sitecore/templates/Feature/Navigation/Link Menu template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
     [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{A06EE689-428F-4227-A728-20C7FE49F53E}", "IuSh1Z9rpz92COErZ0WkhrqLsU0=", "Sitecore.Feature.Navigation")]
@@ -25,7 +79,7 @@ namespace Sitecore.Feature.Navigation.Models {
     
     /// <summary>Represents the /sitecore/templates/Feature/Navigation/Link Menu Item template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
-    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{EBB60F61-CC55-4107-8D70-53E347BA2B3D}", "MCCqQ9rI72s+UGh29Wqp286pvN8=", "Sitecore.Feature.Navigation")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{EBB60F61-CC55-4107-8D70-53E347BA2B3D}", "p1fcQ643M4OzzAari9RmYbAbofI=", "Sitecore.Feature.Navigation")]
     public partial interface ILinkMenuItemItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
         
         /// <summary>Represents the Link field</summary>
@@ -51,16 +105,22 @@ namespace Sitecore.Feature.Navigation.Models {
         Synthesis.FieldTypes.Interfaces.ITextField ShowTitle {
             get;
         }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Logo Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{4C291EBD-78B0-4B55-80DC-96EF86763A5F}", "kuEAVkV13rXnBUfM5YR4F/vvoBw=", "Sitecore.Feature.Navigation")]
+    public partial interface ILogoSettingsItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
         
-        /// <summary>Represents the Show In Navigation Menus field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("show_in_navigation_menus")]
-        Synthesis.FieldTypes.Interfaces.IBooleanField ShowInNavigationMenus {
+        /// <summary>Represents the Logo Icon field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("logo_icon")]
+        Synthesis.FieldTypes.Interfaces.IImageField LogoIcon {
             get;
         }
         
-        /// <summary>Represents the Show Children In Menus field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("show_children_in_menus")]
-        Synthesis.FieldTypes.Interfaces.IBooleanField ShowChildrenInMenus {
+        /// <summary>Represents the Link field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("link")]
+        Synthesis.FieldTypes.Interfaces.IHyperlinkField Link {
             get;
         }
     }
@@ -78,6 +138,162 @@ namespace Sitecore.Feature.Navigation.Models {
 
 namespace Sitecore.Feature.Navigation.Models.Concrete {
     
+    
+    /// <summary>Represents the /sitecore/templates/System/Language template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public partial class Language : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.Navigation.Models.ILanguageItem {
+        
+        private Synthesis.FieldTypes.TextField _charset;
+        
+        private Synthesis.FieldTypes.TextField _codepage;
+        
+        private Synthesis.FieldTypes.TextField _dictionary;
+        
+        private Synthesis.FieldTypes.TextField _encoding;
+        
+        private Synthesis.FieldTypes.TextField _fallbackLanguage;
+        
+        private Synthesis.FieldTypes.TextField _iso;
+        
+        private Synthesis.FieldTypes.TextField _regionalIsoCode;
+        
+        private Synthesis.FieldTypes.TextField _worldLingoLanguageIdentifier;
+        
+        public Language(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public Language(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Language";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{F68F13A6-3395-426A-B9A1-FA2DC60D94EB}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+        
+        /// <summary>Represents the Charset field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("charset")]
+        public Synthesis.FieldTypes.Interfaces.ITextField Charset {
+            get {
+                if (_charset == null) {
+                    _charset = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{49E5E8F3-ED4A-4A06-ABE1-B9408951DEE9}"], "/sitecore/templates/System/Language", "Charset"), this.GetSearchFieldValue("charset"));
+                }
+                return _charset;
+            }
+        }
+        
+        /// <summary>Represents the Code page field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("code_page")]
+        public Synthesis.FieldTypes.Interfaces.ITextField Codepage {
+            get {
+                if (_codepage == null) {
+                    _codepage = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{990596CE-0024-43F3-BF4C-A991BFA69B45}"], "/sitecore/templates/System/Language", "Code page"), this.GetSearchFieldValue("code_page"));
+                }
+                return _codepage;
+            }
+        }
+        
+        /// <summary>Represents the Dictionary field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("dictionary")]
+        public Synthesis.FieldTypes.Interfaces.ITextField Dictionary {
+            get {
+                if (_dictionary == null) {
+                    _dictionary = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{60669E54-7B9C-4B55-A0C4-8F25059D8B94}"], "/sitecore/templates/System/Language", "Dictionary"), this.GetSearchFieldValue("dictionary"));
+                }
+                return _dictionary;
+            }
+        }
+        
+        /// <summary>Represents the Encoding field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("encoding")]
+        public Synthesis.FieldTypes.Interfaces.ITextField Encoding {
+            get {
+                if (_encoding == null) {
+                    _encoding = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{8728D8FF-66D9-40C2-8B34-C4FC1466942E}"], "/sitecore/templates/System/Language", "Encoding"), this.GetSearchFieldValue("encoding"));
+                }
+                return _encoding;
+            }
+        }
+        
+        /// <summary>Represents the Fallback Language field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("fallback_language")]
+        public Synthesis.FieldTypes.Interfaces.ITextField FallbackLanguage {
+            get {
+                if (_fallbackLanguage == null) {
+                    _fallbackLanguage = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{892975AC-496F-4AC9-8826-087095C68E1D}"], "/sitecore/templates/System/Language", "Fallback Language"), this.GetSearchFieldValue("fallback_language"));
+                }
+                return _fallbackLanguage;
+            }
+        }
+        
+        /// <summary>Represents the Iso field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("iso")]
+        public Synthesis.FieldTypes.Interfaces.ITextField Iso {
+            get {
+                if (_iso == null) {
+                    _iso = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{C437E416-8948-427D-A982-8ED37AE3F553}"], "/sitecore/templates/System/Language", "Iso"), this.GetSearchFieldValue("iso"));
+                }
+                return _iso;
+            }
+        }
+        
+        /// <summary>Represents the Regional Iso Code field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("regional_iso_code")]
+        public Synthesis.FieldTypes.Interfaces.ITextField RegionalIsoCode {
+            get {
+                if (_regionalIsoCode == null) {
+                    _regionalIsoCode = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{0620F810-9294-4F14-AF9F-F5772EFCA0B2}"], "/sitecore/templates/System/Language", "Regional Iso Code"), this.GetSearchFieldValue("regional_iso_code"));
+                }
+                return _regionalIsoCode;
+            }
+        }
+        
+        /// <summary>Represents the WorldLingo Language Identifier field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("worldlingo_language_identifier")]
+        public Synthesis.FieldTypes.Interfaces.ITextField WorldLingoLanguageIdentifier {
+            get {
+                if (_worldLingoLanguageIdentifier == null) {
+                    _worldLingoLanguageIdentifier = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{4CB05A97-3BF9-47FE-A835-6088E592FDE6}"], "/sitecore/templates/System/Language", "WorldLingo Language Identifier"), this.GetSearchFieldValue("worldlingo_language_identifier"));
+                }
+                return _worldLingoLanguageIdentifier;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public class LanguageInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{F68F13A6-3395-426A-B9A1-FA2DC60D94EB}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new Language(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new Language(searchFields);
+        }
+    }
     
     /// <summary>Represents the /sitecore/templates/Feature/Navigation/Link Menu template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
@@ -156,10 +372,6 @@ namespace Sitecore.Feature.Navigation.Models.Concrete {
         
         private Synthesis.FieldTypes.TextField _showTitle;
         
-        private Synthesis.FieldTypes.BooleanField _showInNavigationMenus;
-        
-        private Synthesis.FieldTypes.BooleanField _showChildrenInMenus;
-        
         public LinkMenuItem(Sitecore.Data.Items.Item innerItem) : 
                 base(innerItem) {
         }
@@ -232,28 +444,6 @@ namespace Sitecore.Feature.Navigation.Models.Concrete {
                 return _showTitle;
             }
         }
-        
-        /// <summary>Represents the Show In Navigation Menus field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("show_in_navigation_menus")]
-        public Synthesis.FieldTypes.Interfaces.IBooleanField ShowInNavigationMenus {
-            get {
-                if (_showInNavigationMenus == null) {
-                    _showInNavigationMenus = new Synthesis.FieldTypes.BooleanField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{F9810CCE-C823-40E3-8E22-B65CF9510E4F}"], "/sitecore/templates/Feature/Navigation/Link Menu Item", "Show In Navigation Menus"), this.GetSearchFieldValue("show_in_navigation_menus"));
-                }
-                return _showInNavigationMenus;
-            }
-        }
-        
-        /// <summary>Represents the Show Children In Menus field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("show_children_in_menus")]
-        public Synthesis.FieldTypes.Interfaces.IBooleanField ShowChildrenInMenus {
-            get {
-                if (_showChildrenInMenus == null) {
-                    _showChildrenInMenus = new Synthesis.FieldTypes.BooleanField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{6AE6BF09-D939-4003-A851-0AE55697DC77}"], "/sitecore/templates/Feature/Navigation/Link Menu Item", "Show Children In Menus"), this.GetSearchFieldValue("show_children_in_menus"));
-                }
-                return _showChildrenInMenus;
-            }
-        }
     }
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
@@ -271,6 +461,84 @@ namespace Sitecore.Feature.Navigation.Models.Concrete {
         
         public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
             return new LinkMenuItem(searchFields);
+        }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Logo Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public partial class LogoSettings : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.Navigation.Models.ILogoSettingsItem {
+        
+        private Synthesis.FieldTypes.ImageField _logoIcon;
+        
+        private Synthesis.FieldTypes.HyperlinkField _link;
+        
+        public LogoSettings(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public LogoSettings(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Logo Settings";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{4C291EBD-78B0-4B55-80DC-96EF86763A5F}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+        
+        /// <summary>Represents the Logo Icon field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("logo_icon")]
+        public Synthesis.FieldTypes.Interfaces.IImageField LogoIcon {
+            get {
+                if (_logoIcon == null) {
+                    _logoIcon = new Synthesis.FieldTypes.ImageField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{8C0EACDF-916A-41C5-9DE4-B6BB25E9CB51}"], "/sitecore/templates/Feature/Navigation/Logo Settings", "Logo Icon"), this.GetSearchFieldValue("logo_icon"));
+                }
+                return _logoIcon;
+            }
+        }
+        
+        /// <summary>Represents the Link field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("link")]
+        public Synthesis.FieldTypes.Interfaces.IHyperlinkField Link {
+            get {
+                if (_link == null) {
+                    _link = new Synthesis.FieldTypes.HyperlinkField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{DBD7C2D3-7302-4607-95AA-466B2B32546C}"], "/sitecore/templates/Feature/Navigation/Logo Settings", "Link"), this.GetSearchFieldValue("link"));
+                }
+                return _link;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public class LogoSettingsInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{4C291EBD-78B0-4B55-80DC-96EF86763A5F}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new LogoSettings(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new LogoSettings(searchFields);
         }
     }
 }

@@ -12,7 +12,7 @@
     @CacheBuster.AddCssWithCacheBuster(cssPath)
 
     @CacheBuster.BuildCacheBusterVariable(@"/js/desktop.js")
-    <script type="text/javascript" src="/js/vendor/require.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
     @CacheBuster.AddJsWithCacheBuster(@"/js/desktop.js")
 
     @if (!Sitecore.Context.PageMode.IsExperienceEditor)
@@ -24,8 +24,6 @@
     <div id="main-container">
         <header class="header-static">
             @Html.Sitecore().Placeholder("header-top")
-
-            @Html.Sitecore().Placeholder("navbar")
         </header>
         <main role="main">
             @Html.Sitecore().Placeholder("page-layout")

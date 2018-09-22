@@ -4,6 +4,11 @@ Parent: "ebb60f61-cc55-4107-8d70-53e347ba2b3d"
 Template: "ebb60f61-cc55-4107-8d70-53e347ba2b3d"
 Path: /sitecore/templates/Feature/Navigation/Link Menu Item/__Standard Values
 DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{EBB60F61-CC55-4107-8D70-53E347BA2B3D}"
 Languages:
 - Language: en
   Versions:

@@ -1,0 +1,17 @@
+﻿@using Sitecore.Feature.Navigation.Models
+@model LanguageSwitcherRenderingModel
+
+<li class="dropdown">
+    <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-globe"></i>
+    </a>
+    <ul class="dropdown-menu">
+        @foreach (var language in Model.SwitchableLanguages)
+        {
+            var cssClass = language.IsCurrent ? "active" : string.Empty;
+            <li class="@cssClass">
+                <a href="@language.GenerateUrl()">@language.Language.</a>
+            </li>
+        }
+    </ul>
+</li>

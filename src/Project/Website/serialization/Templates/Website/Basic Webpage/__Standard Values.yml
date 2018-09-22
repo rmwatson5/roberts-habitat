@@ -33,6 +33,38 @@ SharedFields:
           par=""
           ph="right-header-top"
           uid="{CD7E06D0-4F38-4423-ADB7-285E3183BC3C}" />
+        <r
+          id="{17892137-35A3-4A8B-BCA7-7CDBBEEC8F86}"
+          ph="header-top"
+          uid="{3F6F551F-CF8E-4C2E-A7C1-B48439964C1E}" />
+        <r
+          ds="{78CFC41B-C3AB-4733-A82F-F9E8A2DA1408}"
+          id="{5B5C2938-5117-4C8A-A783-F5C515BD1392}"
+          par=""
+          ph="navbar-left"
+          uid="{30C290C3-02C1-4823-A55C-14BFA8101CB6}" />
+        <r
+          ds="{6F5ABE6C-F942-485D-822E-028FC5DA4B0A}"
+          id="{A38CC672-A59A-44AE-B0D4-EAB32AEDEF0A}"
+          par=""
+          ph="navbar-center"
+          uid="{92642A74-A6F5-46D8-99CC-EBA7AAA43C25}" />
+        <r
+          ds=""
+          id="{476AEEA2-35C5-4DF2-9A7D-EED3F3EF8BFF}"
+          par=""
+          ph="navbar-right"
+          uid="{EB0B5932-7F7F-4A21-BFD9-910CB22392E7}" />
+        <r
+          id="{6F4C86CF-3454-41D7-9F66-5B807B59F8C9}"
+          ph="navbar-activity"
+          uid="{7D02E09C-C92D-44FC-AB69-642AFC035A10}" />
+        <r
+          ds="{B3E7C74E-5A1B-4309-A141-60CAA1AA1274}"
+          id="{226EB7D2-7C6A-400F-A75B-94ACC9E7FDF8}"
+          par=""
+          ph="navbar-activity"
+          uid="{E1A9FD27-C4C5-4657-832C-AB7291E7E065}" />
       </d>
     </r>
 Languages:

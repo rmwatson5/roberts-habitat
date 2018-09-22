@@ -1,0 +1,47 @@
+<li class="navbar-activity-search dropdown">
+  <form action="/en/Search" class="navbar-form" role="search">
+      <div class="form-group">
+          <input type="text" name="query" id="searchInputBox" placeholder="Enter a text to search for..." autocomplete="off">
+      </div>
+  </form>
+
+  <a href="#" class="btn navbar-toggle-search" data-toggle-class="is-searching" data-target="#mainNavbar">
+      <span class="glyphicon glyphicon-search"></span>
+  </a>
+
+  <div class="dropdown-menu dropdown-menu-wide" id="navbar-activity-search-results">
+      <div class="row panel-loading">
+          <div class="col-md-12">
+              <div class="text-center p-b-1">
+                  Searching...
+              </div>
+              <div class="text-center">
+                  <span class="fa fa-spinner fa-2x fa-spin"></span>
+              </div>
+          </div>
+      </div>
+      <div class="row panel-results">
+          <div class="col-md-12">
+              <ul class="media-list results"></ul>
+          </div>
+      </div>
+      <div class="row panel-result-count">
+          <div class="col-md-12">
+              <small>
+                  <em class="result-count"></em>
+                  search results found.
+              </small>
+          </div>
+      </div>
+      <div class="row panel-facet-values">
+          <div class="col-md-12">
+              <ul class="facet-values"></ul>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <button class="btn btn-primary btn-sm pull-right" onclick="$('.navbar-activity-search form').submit()">Search</button>
+          </div>
+      </div>
+  </div>
+</li>

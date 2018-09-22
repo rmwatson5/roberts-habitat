@@ -60,6 +60,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Rainbow, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Rainbow.Core.2.0.2\lib\net452\Rainbow.dll</HintPath>
     </Reference>
@@ -240,6 +243,7 @@
     <Content Include="App_Config\Include\Feature\Feature.PageContent.Serialization.config" />
     <Content Include="App_Config\Include\Project\Project.Website.config" />
     <Content Include="App_Config\Include\Feature\Feature.PageContent.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Accounts.Serialization.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -248,10 +252,13 @@
     <Content Include="Views\Layouts\Default.cshtml" />
     <Content Include="Views\Frames\HeaderTop.cshtml" />
     <Content Include="Views\Navigation\NavigationLinks.cshtml" />
+    <Content Include="Views\Frames\Navbar.cshtml" />
+    <Content Include="Views\Navigation\Logo.cshtml" />
+    <Content Include="Views\Navigation\NavigationMenu.cshtml" />
+    <Content Include="Views\Navigation\LanguageSwitcher.cshtml" />
+    <Content Include="Views\Frames\NavbarActivity.cshtml" />
+    <Content Include="Views\Accounts\Login.cshtml" />
     <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
@@ -262,6 +269,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Feature\Accounts\code\Sitecore.Feature.Accounts.csproj">
+      <Project>{f325ec3e-24e0-4f7b-8ed0-7f30a0f041e9}</Project>
+      <Name>Sitecore.Feature.Accounts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Feature\Navigation\code\Sitecore.Feature.Navigation.csproj">
       <Project>{69d1f520-5429-48ba-afc1-5e508eaeb31a}</Project>
       <Name>Sitecore.Feature.Navigation</Name>
@@ -273,6 +284,10 @@
     <ProjectReference Include="..\..\..\Foundation\DataAccess\code\Sitecore.Foundation.DataAccess.csproj">
       <Project>{b8774fcb-4c23-432e-a90b-5d4704743ce4}</Project>
       <Name>Sitecore.Foundation.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Helpers\code\Sitecore.Foundation.Helpers.csproj">
+      <Project>{2f9f574b-a5ec-4d7e-b8b2-1d7353f58634}</Project>
+      <Name>Sitecore.Foundation.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
