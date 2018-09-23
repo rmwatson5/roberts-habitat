@@ -262,6 +262,7 @@
     <Content Include="Views\Navigation\Search.cshtml" />
     <Content Include="Views\Media\Carousel.cshtml" />
     <Content Include="Views\Frames\PageHeader.cshtml" />
+    <Content Include="Views\Navigation\ItemListing.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
