@@ -225,7 +225,6 @@
     &-left+&-center {
         display: inline-block;
         text-align: center;
-        height: 100%;
         z-index: 0;
         @media all and (max-width: $screen-xs-max) {
             display: block;

@@ -1,0 +1,17 @@
+﻿---
+ID: "8dfdb953-11e8-4a60-aebc-e3c6aef2f52f"
+Parent: "08e4a889-31b4-4479-bf74-cc4b6ab4e68f"
+Template: "08e4a889-31b4-4479-bf74-cc4b6ab4e68f"
+Path: /sitecore/templates/Feature/Media/Carousel Slide/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180922T221307Z
+    - ID: "837a038e-23b8-4dfd-988e-41ee01f70584"
+      Hint: Title
+      Value: $name

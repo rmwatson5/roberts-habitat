@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8774FCB-4C23-432E-A90B-5D4704743CE4}</ProjectGuid>
+    <ProjectGuid>{83C50026-DE64-4F79-B469-5834531A3639}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.Foundation.DataAccess</RootNamespace>
-    <AssemblyName>Sitecore.Foundation.DataAccess</AssemblyName>
+    <RootNamespace>Sitecore.Feature.Media</RootNamespace>
+    <AssemblyName>Sitecore.Feature.Media</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,6 +33,9 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Rainbow, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Rainbow.Core.2.0.2\lib\net452\Rainbow.dll</HintPath>
     </Reference>
@@ -47,9 +50,6 @@
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.180604\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Synthesis, Version=9.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Synthesis.Core.9.0.1\lib\net462\Synthesis.dll</HintPath>
@@ -91,32 +91,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\FieldExtensions.cs" />
-    <Compile Include="Extensions\SitecoreExtensions.cs" />
-    <Compile Include="FeatureModelRegistration.cs" />
-    <Compile Include="FieldTypes\HelixItemReferenceListField.cs" />
-    <Compile Include="FieldTypes\IHelixItemReferenceListField.cs" />
-    <Compile Include="FoundationModelRegistration.cs" />
-    <Compile Include="HelixModelRegistration.cs" />
     <Compile Include="ModelRegistration.cs" />
-    <Compile Include="Models\SynthesisRenderingModel.cs" />
-    <Compile Include="ProjectModelRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Synthesis.Model.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="CodeGeneration\StaticItemTemplate.t4" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CodeGeneration\AssemblyReferences.t4">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AssemblyReferences1.cs</LastGenOutput>
-    </None>
+    <ProjectReference Include="..\..\..\Foundation\DataAccess\code\Sitecore.Foundation.DataAccess.csproj">
+      <Project>{b8774fcb-4c23-432e-a90b-5d4704743ce4}</Project>
+      <Name>Sitecore.Foundation.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

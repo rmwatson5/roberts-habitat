@@ -17340,7 +17340,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .navbar-left + .navbar-center {
   display: inline-block;
   text-align: center;
-  height: 100%;
   z-index: 0;
 }
 
@@ -17352,75 +17351,75 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 
-/* line 236, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 235, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-left + .navbar-right .navbar-form {
   margin-top: 0px !important;
 }
 
 @media (max-width: 767px) {
-  /* line 238, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 237, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-left + .navbar-right .navbar-form input {
     padding: 20px 70px 20px 15px !important;
     box-sizing: border-box;
   }
 }
 
-/* line 247, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 246, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-center {
   display: block;
   text-align: center;
 }
 
-/* line 254, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 253, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-center .navbar-header {
   display: inline-block;
   float: none;
 }
 
 @media all and (max-width: 767px) {
-  /* line 257, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 256, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-center .navbar-header .navbar-brand {
     margin-bottom: 0;
   }
 }
 
-/* line 265, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 264, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-right > .navbar-collapse {
   float: left;
 }
 
-/* line 269, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 268, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-brand {
   padding: 0;
   height: auto;
 }
 
-/* line 273, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 272, FED/sass/vendor/components/molecules/_navbar.scss */
 .bg-white .navbar-brand:hover {
   color: #000;
 }
 
-/* line 277, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 276, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-brand.has-tagline {
   margin: 0;
 }
 
 @media all and (max-width: 991px) {
-  /* line 277, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 276, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-brand.has-tagline {
     margin-top: 0;
   }
 }
 
 @media all and (min-width: 992px) {
-  /* line 269, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 268, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-brand {
     margin-right: 0px;
   }
 }
 
 @media all and (max-width: 991px) {
-  /* line 269, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 268, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-brand {
     margin-right: 0;
     margin-top: 10px;
@@ -17428,139 +17427,139 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 @media all and (max-width: 767px) {
-  /* line 269, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 268, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-brand {
     margin: 16px 0 10px 0;
   }
-  /* line 293, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 292, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-brand.has-tagline {
     margin: 10px 0 0 0;
   }
 }
 
-/* line 297, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 296, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-brand .logo {
   text-align: left;
 }
 
-/* line 299, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 298, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-brand .logo svg,
 .navbar-brand .logo img {
   display: block;
 }
 
-/* line 303, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 302, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-brand .logo .tagline {
   margin-top: 0px;
   text-align: left;
 }
 
-/* line 306, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 305, FED/sass/vendor/components/molecules/_navbar.scss */
 .bg-transparent .navbar-brand .logo .tagline {
   color: #FFF;
 }
 
-/* line 314, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 313, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-brand:hover img path,
 .navbar-brand:hover svg path {
   fill: #FFF !important;
 }
 
-/* line 316, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 315, FED/sass/vendor/components/molecules/_navbar.scss */
 .bg-white .navbar-brand:hover img path, .bg-white
 .navbar-brand:hover svg path {
   fill: #000 !important;
 }
 
-/* line 322, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 321, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-brand img,
 .navbar-brand svg {
   display: inline-block;
 }
 
-/* line 326, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 325, FED/sass/vendor/components/molecules/_navbar.scss */
 .bg-transparent .navbar-brand img path, .bg-transparent
 .navbar-brand svg path {
   fill: #FFF;
 }
 
-/* line 332, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 331, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-nav {
   float: none;
 }
 
-/* line 334, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 333, FED/sass/vendor/components/molecules/_navbar.scss */
 .lte-ie8 .navbar-nav {
   float: none !important;
   display: inline-block;
 }
 
-/* line 339, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 338, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-nav > li > a {
   border: none;
 }
 
-/* line 341, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 340, FED/sass/vendor/components/molecules/_navbar.scss */
 .bg-white .navbar-nav > li > a {
   color: #000 !important;
 }
 
 @media all and (max-width: 767px) {
-  /* line 347, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 346, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-nav > li.open .dropdown-menu {
     color: #6d7d9a;
     background-color: rgba(0, 0, 0, 0.2);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#20000000, endColorstr=#20000000);
   }
-  /* line 352, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 351, FED/sass/vendor/components/molecules/_navbar.scss */
   .bg-primary .navbar-nav > li.open .dropdown-menu,
   .bg-secondary .navbar-nav > li.open .dropdown-menu,
   .bg-dark .navbar-nav > li.open .dropdown-menu,
   .bg-media .navbar-nav > li.open .dropdown-menu {
     color: #FFF;
   }
-  /* line 358, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 357, FED/sass/vendor/components/molecules/_navbar.scss */
   .bg-white .navbar-nav > li.open .dropdown-menu {
     color: #000;
   }
 }
 
-/* line 362, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 361, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-nav > li.open .dropdown-menu .dropdown-header,
 .navbar-nav > li.open .dropdown-menu a {
   padding-left: 0px;
 }
 
-/* line 365, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 364, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-nav > li.open .dropdown-menu .dropdown-header.btn,
 .navbar-nav > li.open .dropdown-menu a.btn {
   padding-left: 12px;
 }
 
-/* line 370, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 369, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-nav > li.open .mega-dropdown-menu {
   top: 50px;
 }
 
 @media all and (max-width: 767px) {
-  /* line 376, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 375, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-nav > li .dropdown-menu > li > a {
     color: #FFF;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 391, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 390, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-default .navbar-collapse .navbar-nav .open .dropdown-menu > li > a {
     color: #FFF;
   }
-  /* line 394, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 393, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-default .navbar-collapse .navbar-nav .open .dropdown-menu > li > a:hover {
     color: #FFF;
   }
 }
 
-/* line 406, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 405, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
@@ -17569,65 +17568,65 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #FFF;
 }
 
-/* line 416, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 415, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-nav > .open .dropdown-menu > li.disabled > a {
   color: #777777;
 }
 
-/* line 418, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 417, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-nav > .open .dropdown-menu > li.disabled > a:hover {
   color: #777777;
 }
 
-/* line 424, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 423, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-nav > .open .dropdown-menu > li.active > a {
   color: #C8244F;
   background-color: transparent;
 }
 
-/* line 429, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 428, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-nav > .open .dropdown-menu > li > a {
   color: #424C5F;
 }
 
-/* line 431, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 430, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-nav > .open .dropdown-menu > li > a:hover {
   color: #424C5F;
 }
 
 @media (max-width: 991px) {
-  /* line 429, FED/sass/vendor/components/molecules/_navbar.scss */
+  /* line 428, FED/sass/vendor/components/molecules/_navbar.scss */
   .navbar-default .navbar-nav > .open .dropdown-menu > li > a {
     color: #424C5F;
   }
 }
 
-/* line 437, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 436, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-nav > .open .dropdown-menu > li > a.active {
   color: #FFF;
 }
 
-/* line 441, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 440, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-nav > .open .dropdown-menu > li.divider {
   background-color: #424C5F;
 }
 
-/* line 449, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 448, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: transparent;
 }
 
-/* line 453, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 452, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF;
 }
 
-/* line 455, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 454, FED/sass/vendor/components/molecules/_navbar.scss */
 .bg-white .navbar-default .navbar-toggle .icon-bar {
   background-color: #000;
 }
 
-/* line 461, FED/sass/vendor/components/molecules/_navbar.scss */
+/* line 460, FED/sass/vendor/components/molecules/_navbar.scss */
 .navbar.navbar-default {
   border-color: transparent;
 }

@@ -11,6 +11,74 @@ SharedFields:
   Value: |
     {27C9E067-9FB2-438E-A695-8718703AEC5E}
     {24A091BD-0F15-469E-88FC-385A521BA3EA}
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{B62A3CE4-30A5-48EA-95AE-74809CE164FC}">
+        <r
+          id="{F3DAB19A-7F0C-450C-A2E8-6F1FCC0087CB}"
+          ph="header-top"
+          uid="{6AF293C1-2480-48FD-B6F9-5A6A83E1154F}" />
+        <r
+          ds="{FEE7C6F1-54EF-4E0F-AEB4-0A8A4444BB47}"
+          id="{A11DEA32-F163-404B-8E19-C35ED069CE50}"
+          par=""
+          ph="left-header-top"
+          uid="{354FEA45-2DFD-4DD6-A7A5-58218A46703A}" />
+        <r
+          ds="{DC2A16B9-3611-4386-AC35-498BBFE01919}"
+          id="{A11DEA32-F163-404B-8E19-C35ED069CE50}"
+          par=""
+          ph="right-header-top"
+          uid="{CD7E06D0-4F38-4423-ADB7-285E3183BC3C}" />
+        <r
+          id="{17892137-35A3-4A8B-BCA7-7CDBBEEC8F86}"
+          ph="header-top"
+          uid="{3F6F551F-CF8E-4C2E-A7C1-B48439964C1E}" />
+        <r
+          ds="{78CFC41B-C3AB-4733-A82F-F9E8A2DA1408}"
+          id="{5B5C2938-5117-4C8A-A783-F5C515BD1392}"
+          par=""
+          ph="navbar-left"
+          uid="{30C290C3-02C1-4823-A55C-14BFA8101CB6}" />
+        <r
+          ds="{6F5ABE6C-F942-485D-822E-028FC5DA4B0A}"
+          id="{A38CC672-A59A-44AE-B0D4-EAB32AEDEF0A}"
+          par=""
+          ph="navbar-center"
+          uid="{92642A74-A6F5-46D8-99CC-EBA7AAA43C25}" />
+        <r
+          ds=""
+          id="{476AEEA2-35C5-4DF2-9A7D-EED3F3EF8BFF}"
+          par=""
+          ph="navbar-right"
+          uid="{EB0B5932-7F7F-4A21-BFD9-910CB22392E7}" />
+        <r
+          id="{6F4C86CF-3454-41D7-9F66-5B807B59F8C9}"
+          ph="navbar-activity"
+          uid="{7D02E09C-C92D-44FC-AB69-642AFC035A10}" />
+        <r
+          ds="{B3E7C74E-5A1B-4309-A141-60CAA1AA1274}"
+          id="{226EB7D2-7C6A-400F-A75B-94ACC9E7FDF8}"
+          par=""
+          ph="navbar-activity"
+          uid="{E1A9FD27-C4C5-4657-832C-AB7291E7E065}" />
+        <r
+          ds="{EAD0C2AF-8C79-48DD-AB9E-58A195117CB5}"
+          id="{955427DF-55D6-4DE7-AE39-07E0739716DD}"
+          par=""
+          ph="navbar-activity"
+          uid="{A190F1D3-DCFB-446C-BD85-1315810AEAFB}" />
+        <r
+          id="{091E58A7-183A-48A2-BE69-99BA783FC77C}"
+          ph="page-layout"
+          uid="{8F7E1BC1-4C9A-41D5-BE42-018ED6C345DF}" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Versions:

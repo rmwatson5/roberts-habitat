@@ -244,6 +244,7 @@
     <Content Include="App_Config\Include\Project\Project.Website.config" />
     <Content Include="App_Config\Include\Feature\Feature.PageContent.config" />
     <Content Include="App_Config\Include\Feature\Feature.Accounts.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Media.Serialization.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -259,6 +260,8 @@
     <Content Include="Views\Frames\NavbarActivity.cshtml" />
     <Content Include="Views\Accounts\Login.cshtml" />
     <Content Include="Views\Navigation\Search.cshtml" />
+    <Content Include="Views\Media\Carousel.cshtml" />
+    <Content Include="Views\Frames\PageHeader.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -273,6 +276,10 @@
     <ProjectReference Include="..\..\..\Feature\Accounts\code\Sitecore.Feature.Accounts.csproj">
       <Project>{f325ec3e-24e0-4f7b-8ed0-7f30a0f041e9}</Project>
       <Name>Sitecore.Feature.Accounts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Feature\Media\code\Sitecore.Feature.Media.csproj">
+      <Project>{83c50026-de64-4f79-b469-5834531a3639}</Project>
+      <Name>Sitecore.Feature.Media</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Feature\Navigation\code\Sitecore.Feature.Navigation.csproj">
       <Project>{69d1f520-5429-48ba-afc1-5e508eaeb31a}</Project>
@@ -289,6 +296,10 @@
     <ProjectReference Include="..\..\..\Foundation\Helpers\code\Sitecore.Foundation.Helpers.csproj">
       <Project>{2f9f574b-a5ec-4d7e-b8b2-1d7353f58634}</Project>
       <Name>Sitecore.Foundation.Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Searchable\code\Sitecore.Foundation.Searchable.csproj">
+      <Project>{f7014f4c-8ade-4832-ba62-73e22d5c285c}</Project>
+      <Name>Sitecore.Foundation.Searchable</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
