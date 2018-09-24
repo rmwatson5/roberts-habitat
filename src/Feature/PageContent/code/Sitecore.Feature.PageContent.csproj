@@ -84,7 +84,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ScaffoldingController.cs" />
     <Compile Include="ModelRegistration.cs" />
+    <Compile Include="Models\HeaderRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sites\HelixSiteContextFactory.cs" />
     <Compile Include="Sites\HelixSiteProvider.cs" />
@@ -94,14 +96,15 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\DataAccess\code\Sitecore.Foundation.DataAccess.csproj">
       <Project>{b8774fcb-4c23-432e-a90b-5d4704743ce4}</Project>
       <Name>Sitecore.Foundation.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Navigation\code\Sitecore.Foundation.Navigation.csproj">
+      <Project>{69d1f520-5429-48ba-afc1-5e508eaeb31a}</Project>
+      <Name>Sitecore.Foundation.Navigation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

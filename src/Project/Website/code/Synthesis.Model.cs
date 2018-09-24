@@ -117,9 +117,9 @@ namespace Sitecore.Project.Website.Models.Concrete {
         
         private Synthesis.FieldTypes.TextField _targetHostName;
         
-        private Synthesis.FieldTypes.ItemReferenceField _language1;
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _language1;
         
-        private Synthesis.FieldTypes.ItemReferenceField _loginPage;
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _loginPage;
         
         private Synthesis.FieldTypes.BooleanField _requireLogin;
         
@@ -199,10 +199,10 @@ namespace Sitecore.Project.Website.Models.Concrete {
         
         /// <summary>Represents the Language field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("language")]
-        public Synthesis.FieldTypes.Interfaces.IItemReferenceField Language1 {
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField Language1 {
             get {
                 if (_language1 == null) {
-                    _language1 = new Synthesis.FieldTypes.ItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{370C2996-5C2A-4B25-B062-B8FCF575DD9D}"], "/sitecore/templates/Project/Website/Basic Site Root", "Language"), this.GetSearchFieldValue("language"));
+                    _language1 = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{370C2996-5C2A-4B25-B062-B8FCF575DD9D}"], "/sitecore/templates/Project/Website/Basic Site Root", "Language"), this.GetSearchFieldValue("language"));
                 }
                 return _language1;
             }
@@ -210,10 +210,10 @@ namespace Sitecore.Project.Website.Models.Concrete {
         
         /// <summary>Represents the Login Page field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("login_page")]
-        public Synthesis.FieldTypes.Interfaces.IItemReferenceField LoginPage {
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField LoginPage {
             get {
                 if (_loginPage == null) {
-                    _loginPage = new Synthesis.FieldTypes.ItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{453EBC8B-F894-4F08-A348-20ECDE37F50F}"], "/sitecore/templates/Project/Website/Basic Site Root", "Login Page"), this.GetSearchFieldValue("login_page"));
+                    _loginPage = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{453EBC8B-F894-4F08-A348-20ECDE37F50F}"], "/sitecore/templates/Project/Website/Basic Site Root", "Login Page"), this.GetSearchFieldValue("login_page"));
                 }
                 return _loginPage;
             }

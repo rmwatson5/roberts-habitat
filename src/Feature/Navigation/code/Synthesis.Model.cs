@@ -11,12 +11,6 @@
 namespace Sitecore.Feature.Navigation.Models {
     
     
-    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Item Listing Settings template</summary>
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
-    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{33558292-0A36-498B-8BB8-C3F958990B8A}", "J/uRCrhYEQFnlNF5TfsyMkHd7nM=", "Sitecore.Feature.Navigation")]
-    public partial interface IItemListingSettingsItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
-    }
-    
     /// <summary>Represents the /sitecore/templates/Feature/Navigation/Link Menu template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
     [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{A06EE689-428F-4227-A728-20C7FE49F53E}", "IuSh1Z9rpz92COErZ0WkhrqLsU0=", "Sitecore.Feature.Navigation")]
@@ -55,42 +49,6 @@ namespace Sitecore.Feature.Navigation.Models {
         /// <summary>Represents the Show Title field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("show_title")]
         Synthesis.FieldTypes.Interfaces.ITextField ShowTitle {
-            get;
-        }
-    }
-    
-    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Listing Item template</summary>
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
-    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{35188EFC-D7BB-409A-83EF-D64BA9821B68}", "nKQSJkhA5MKF41CW4PcT7ZdLI+k=", "Sitecore.Feature.Navigation")]
-    public partial interface IListingItemItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
-        
-        /// <summary>Represents the Image field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("image")]
-        Synthesis.FieldTypes.Interfaces.IImageField Image {
-            get;
-        }
-        
-        /// <summary>Represents the Title field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("title")]
-        Synthesis.FieldTypes.Interfaces.ITextField Title {
-            get;
-        }
-        
-        /// <summary>Represents the Description field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("description")]
-        Synthesis.FieldTypes.Interfaces.IRichTextField Description {
-            get;
-        }
-        
-        /// <summary>Represents the Link field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("link")]
-        Synthesis.FieldTypes.Interfaces.IHyperlinkField Link {
-            get;
-        }
-        
-        /// <summary>Represents the Link Text field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("link_text")]
-        Synthesis.FieldTypes.Interfaces.ITextField LinkText {
             get;
         }
     }
@@ -150,58 +108,6 @@ namespace Sitecore.Feature.Navigation.Models {
 
 namespace Sitecore.Feature.Navigation.Models.Concrete {
     
-    
-    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Item Listing Settings template</summary>
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
-    public partial class ItemListingSettings : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.Navigation.Models.IItemListingSettingsItem {
-        
-        public ItemListingSettings(Sitecore.Data.Items.Item innerItem) : 
-                base(innerItem) {
-        }
-        
-        public ItemListingSettings(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
-                base(searchFields) {
-        }
-        
-        /// <summary>The name of the Sitecore Template that this class represents</summary>
-        public static string TemplateName {
-            get {
-                return "Item Listing Settings";
-            }
-        }
-        
-        /// <summary>The ID of the Sitecore Template that this class represents</summary>
-        public static Sitecore.Data.ID ItemTemplateId {
-            get {
-                return new Sitecore.Data.ID("{33558292-0A36-498B-8BB8-C3F958990B8A}");
-            }
-        }
-        
-        /// <summary>The ID of the Sitecore Template that this class represents</summary>
-        public override Sitecore.Data.ID TemplateId {
-            get {
-                return ItemTemplateId;
-            }
-        }
-    }
-    
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
-    public class ItemListingSettingsInitializer : Synthesis.Initializers.ITemplateInitializer {
-        
-        public Sitecore.Data.ID InitializesTemplateId {
-            get {
-                return new Sitecore.Data.ID("{33558292-0A36-498B-8BB8-C3F958990B8A}");
-            }
-        }
-        
-        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
-            return new ItemListingSettings(innerItem);
-        }
-        
-        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
-            return new ItemListingSettings(searchFields);
-        }
-    }
     
     /// <summary>Represents the /sitecore/templates/Feature/Navigation/Link Menu template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
@@ -369,123 +275,6 @@ namespace Sitecore.Feature.Navigation.Models.Concrete {
         
         public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
             return new LinkMenuItem(searchFields);
-        }
-    }
-    
-    /// <summary>Represents the /sitecore/templates/Feature/Navigation/Listing Item template</summary>
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
-    public partial class ListingItem : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.Navigation.Models.IListingItemItem {
-        
-        private Synthesis.FieldTypes.ImageField _image;
-        
-        private Synthesis.FieldTypes.TextField _title;
-        
-        private Synthesis.FieldTypes.RichTextField _description;
-        
-        private Synthesis.FieldTypes.HyperlinkField _link;
-        
-        private Synthesis.FieldTypes.TextField _linkText;
-        
-        public ListingItem(Sitecore.Data.Items.Item innerItem) : 
-                base(innerItem) {
-        }
-        
-        public ListingItem(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
-                base(searchFields) {
-        }
-        
-        /// <summary>The name of the Sitecore Template that this class represents</summary>
-        public static string TemplateName {
-            get {
-                return "Listing Item";
-            }
-        }
-        
-        /// <summary>The ID of the Sitecore Template that this class represents</summary>
-        public static Sitecore.Data.ID ItemTemplateId {
-            get {
-                return new Sitecore.Data.ID("{35188EFC-D7BB-409A-83EF-D64BA9821B68}");
-            }
-        }
-        
-        /// <summary>The ID of the Sitecore Template that this class represents</summary>
-        public override Sitecore.Data.ID TemplateId {
-            get {
-                return ItemTemplateId;
-            }
-        }
-        
-        /// <summary>Represents the Image field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("image")]
-        public Synthesis.FieldTypes.Interfaces.IImageField Image {
-            get {
-                if (_image == null) {
-                    _image = new Synthesis.FieldTypes.ImageField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{605A6132-BB9D-42D6-8BAF-71FCE1B75903}"], "/sitecore/templates/Feature/Navigation/Listing Item", "Image"), this.GetSearchFieldValue("image"));
-                }
-                return _image;
-            }
-        }
-        
-        /// <summary>Represents the Title field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("title")]
-        public Synthesis.FieldTypes.Interfaces.ITextField Title {
-            get {
-                if (_title == null) {
-                    _title = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{7D6E15AB-D6F3-4D30-A2BC-DE82905B8345}"], "/sitecore/templates/Feature/Navigation/Listing Item", "Title"), this.GetSearchFieldValue("title"));
-                }
-                return _title;
-            }
-        }
-        
-        /// <summary>Represents the Description field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("description")]
-        public Synthesis.FieldTypes.Interfaces.IRichTextField Description {
-            get {
-                if (_description == null) {
-                    _description = new Synthesis.FieldTypes.RichTextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{FE0D81FD-384E-416C-B763-C95C0F5B8E28}"], "/sitecore/templates/Feature/Navigation/Listing Item", "Description"), this.GetSearchFieldValue("description"));
-                }
-                return _description;
-            }
-        }
-        
-        /// <summary>Represents the Link field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("link")]
-        public Synthesis.FieldTypes.Interfaces.IHyperlinkField Link {
-            get {
-                if (_link == null) {
-                    _link = new Synthesis.FieldTypes.HyperlinkField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{D1B48CA0-D8A0-4727-BD41-39CBBEED473E}"], "/sitecore/templates/Feature/Navigation/Listing Item", "Link"), this.GetSearchFieldValue("link"));
-                }
-                return _link;
-            }
-        }
-        
-        /// <summary>Represents the Link Text field</summary>
-        [Sitecore.ContentSearch.IndexFieldAttribute("link_text")]
-        public Synthesis.FieldTypes.Interfaces.ITextField LinkText {
-            get {
-                if (_linkText == null) {
-                    _linkText = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{DA42CE8F-ED0D-4DC6-8DE4-96978D994605}"], "/sitecore/templates/Feature/Navigation/Listing Item", "Link Text"), this.GetSearchFieldValue("link_text"));
-                }
-                return _linkText;
-            }
-        }
-    }
-    
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
-    public class ListingItemInitializer : Synthesis.Initializers.ITemplateInitializer {
-        
-        public Sitecore.Data.ID InitializesTemplateId {
-            get {
-                return new Sitecore.Data.ID("{35188EFC-D7BB-409A-83EF-D64BA9821B68}");
-            }
-        }
-        
-        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
-            return new ListingItem(innerItem);
-        }
-        
-        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
-            return new ListingItem(searchFields);
         }
     }
     

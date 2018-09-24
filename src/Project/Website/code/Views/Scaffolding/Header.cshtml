@@ -1,0 +1,85 @@
+﻿@using Sitecore.Foundation.Navigation.Models
+@using Synthesis.Mvc.Extensions
+@model Sitecore.Feature.PageContent.Models.HeaderRenderingModel
+
+<div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 hidden-xs">
+                @Html.Partial("/Views/Navigation/NavigationLinks.cshtml", Model.SocialLinks)
+            </div>
+            <div class="col-md-6 hidden-xs">
+                <div class="pull-right">
+                    @Html.Partial("/Views/Navigation/NavigationLinks.cshtml", Model.ReferenceLinks)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-default navbar-static" id="mainNavbar">
+    <div class="container">
+        <div class="navbar-left">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#siteNavbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand " href="/">
+                <span class="logo">
+                    @Model.RenderingItem.Logo.Render()
+                </span>
+            </a>
+            <!-- End Logo -->
+        </div>
+        <div class="navbar-center">
+            <div class="collapse navbar-collapse" id="siteNavbar">
+                <ul class="nav navbar-nav">
+                    @foreach (var link in Model.MainNavigation.Children.OfType<ILinkMenuItemItem>())
+                    {
+                        @RenderLink(link)
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <div class="navbar-activity">
+                <ul class="nav navbar-nav">
+                    @Html.Sitecore().Placeholder("navbar-activity")
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+@helper RenderLink(ILinkMenuItemItem link)
+{
+    var children = link.Children.OfType<ILinkMenuItemItem>().ToList();
+    var hasChildren = children.Any();
+    var listItemClass = hasChildren ? "dropdown" : string.Empty;
+    var linkClass = hasChildren ? "dropdown-toggle" : string.Empty;
+    var linkAttributes = hasChildren ? "data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\"" : string.Empty;
+
+    <li class="@listItemClass">
+        <a href="@link.Link.Href" class="@link.Link.CssClass @linkClass" @Html.Raw(linkAttributes)>
+            @link.ShowTitle.Render()
+            @if (hasChildren)
+            {
+                <span class="caret"></span>
+            }
+        </a>
+
+        @if (hasChildren)
+        {
+            <ul class="dropdown-menu">
+                @foreach (var child in children)
+                {
+                    @RenderLink(child)
+                }
+            </ul>
+        }
+    </li>
+}

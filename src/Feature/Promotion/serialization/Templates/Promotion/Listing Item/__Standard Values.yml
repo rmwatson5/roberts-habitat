@@ -1,0 +1,17 @@
+﻿---
+ID: "300e6ddc-0a6f-4854-a899-96d69024639b"
+Parent: "35188efc-d7bb-409a-83ef-d64ba9821b68"
+Template: "35188efc-d7bb-409a-83ef-d64ba9821b68"
+Path: /sitecore/templates/Feature/Promotion/Listing Item/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180923T011824Z
+    - ID: "7d6e15ab-d6f3-4d30-a2bc-de82905b8345"
+      Hint: Title
+      Value: $name

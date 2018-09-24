@@ -13,6 +13,13 @@ namespace Sitecore.Foundation.DataAccess.Models
         where TPageItem : class, IStandardTemplateItem
         where TRenderingItem : class, IStandardTemplateItem
     {
-        public TRenderingItem RenderingItem => RenderingContext.Current.ContextItem.As<TRenderingItem>();
+        public TRenderingItem RenderingItem
+        {
+            get
+            {
+                var dataSourceId = RenderingContext.CurrentOrNull.Rendering.DataSource;
+                return Context.Database.GetItem(dataSourceId).As<TRenderingItem>();
+            }
+        }
     }
 }

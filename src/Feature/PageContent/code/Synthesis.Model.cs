@@ -11,6 +11,48 @@
 namespace Sitecore.Feature.PageContent.Models {
     
     
+    /// <summary>Represents the /sitecore/templates/Feature/PageContent/Footer Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{FC7945C6-47D2-43A0-8045-3B96462B4CE3}", "KGWWZiY14zDx1CqLCi5qdU9in+c=", "Sitecore.Feature.PageContent")]
+    public partial interface IFooterSettingsItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
+        
+        /// <summary>Represents the Copyright Test field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("copyright_test")]
+        Synthesis.FieldTypes.Interfaces.IRichTextField CopyrightTest {
+            get;
+        }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/PageContent/Header Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{E043B173-70CF-4AA4-8AA7-C03863D9DB08}", "bcmyp1uis9VkWmGxZDE51I/lE9I=", "Sitecore.Feature.PageContent")]
+    public partial interface IHeaderSettingsItem : global::Sitecore.Foundation.DataAccess.Models.I_BaseStandardTemplateItem {
+        
+        /// <summary>Represents the Social Links field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("social_links")]
+        Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField SocialLinks {
+            get;
+        }
+        
+        /// <summary>Represents the Reference Links field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("reference_links")]
+        Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField ReferenceLinks {
+            get;
+        }
+        
+        /// <summary>Represents the Primary Navigation Links field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("primary_navigation_links")]
+        Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField PrimaryNavigationLinks {
+            get;
+        }
+        
+        /// <summary>Represents the Logo field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("logo")]
+        Synthesis.FieldTypes.Interfaces.IImageField Logo {
+            get;
+        }
+    }
+    
     /// <summary>Represents the /sitecore/templates/Feature/PageContent/Site Settings template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
     [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{5BE221A1-4BF0-491F-BD98-C53B3ABFD754}", "FdVDS5Sju8uPW0GVZfJW0+lLNYc=", "Sitecore.Feature.PageContent")]
@@ -48,13 +90,13 @@ namespace Sitecore.Feature.PageContent.Models {
         
         /// <summary>Represents the Language field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("language")]
-        Synthesis.FieldTypes.Interfaces.IItemReferenceField Language1 {
+        Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField Language1 {
             get;
         }
         
         /// <summary>Represents the Login Page field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("login_page")]
-        Synthesis.FieldTypes.Interfaces.IItemReferenceField LoginPage {
+        Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField LoginPage {
             get;
         }
         
@@ -120,6 +162,175 @@ namespace Sitecore.Feature.PageContent.Models {
 
 namespace Sitecore.Feature.PageContent.Models.Concrete {
     
+    
+    /// <summary>Represents the /sitecore/templates/Feature/PageContent/Footer Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public partial class FooterSettings : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.PageContent.Models.IFooterSettingsItem {
+        
+        private Synthesis.FieldTypes.RichTextField _copyrightTest;
+        
+        public FooterSettings(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public FooterSettings(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Footer Settings";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{FC7945C6-47D2-43A0-8045-3B96462B4CE3}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+        
+        /// <summary>Represents the Copyright Test field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("copyright_test")]
+        public Synthesis.FieldTypes.Interfaces.IRichTextField CopyrightTest {
+            get {
+                if (_copyrightTest == null) {
+                    _copyrightTest = new Synthesis.FieldTypes.RichTextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{BDE325D0-A7F8-4466-B677-AD4535C84C7B}"], "/sitecore/templates/Feature/PageContent/Footer Settings", "Copyright Test"), this.GetSearchFieldValue("copyright_test"));
+                }
+                return _copyrightTest;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public class FooterSettingsInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{FC7945C6-47D2-43A0-8045-3B96462B4CE3}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new FooterSettings(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new FooterSettings(searchFields);
+        }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/PageContent/Header Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public partial class HeaderSettings : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.PageContent.Models.IHeaderSettingsItem {
+        
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _socialLinks;
+        
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _referenceLinks;
+        
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _primaryNavigationLinks;
+        
+        private Synthesis.FieldTypes.ImageField _logo;
+        
+        public HeaderSettings(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public HeaderSettings(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Header Settings";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{E043B173-70CF-4AA4-8AA7-C03863D9DB08}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+        
+        /// <summary>Represents the Social Links field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("social_links")]
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField SocialLinks {
+            get {
+                if (_socialLinks == null) {
+                    _socialLinks = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{43BB0E3E-6DEF-4BFD-9398-3BF13628592E}"], "/sitecore/templates/Feature/PageContent/Header Settings", "Social Links"), this.GetSearchFieldValue("social_links"));
+                }
+                return _socialLinks;
+            }
+        }
+        
+        /// <summary>Represents the Reference Links field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("reference_links")]
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField ReferenceLinks {
+            get {
+                if (_referenceLinks == null) {
+                    _referenceLinks = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{F117F899-7DF2-4D8C-BACB-DF2A9BA2EDE6}"], "/sitecore/templates/Feature/PageContent/Header Settings", "Reference Links"), this.GetSearchFieldValue("reference_links"));
+                }
+                return _referenceLinks;
+            }
+        }
+        
+        /// <summary>Represents the Primary Navigation Links field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("primary_navigation_links")]
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField PrimaryNavigationLinks {
+            get {
+                if (_primaryNavigationLinks == null) {
+                    _primaryNavigationLinks = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{B13D6141-24FC-4A45-BADB-E856E2ADBAB6}"], "/sitecore/templates/Feature/PageContent/Header Settings", "Primary Navigation Links"), this.GetSearchFieldValue("primary_navigation_links"));
+                }
+                return _primaryNavigationLinks;
+            }
+        }
+        
+        /// <summary>Represents the Logo field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("logo")]
+        public Synthesis.FieldTypes.Interfaces.IImageField Logo {
+            get {
+                if (_logo == null) {
+                    _logo = new Synthesis.FieldTypes.ImageField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{D75AF866-7117-4DF6-B078-EC86581AF423}"], "/sitecore/templates/Feature/PageContent/Header Settings", "Logo"), this.GetSearchFieldValue("logo"));
+                }
+                return _logo;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
+    public class HeaderSettingsInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{E043B173-70CF-4AA4-8AA7-C03863D9DB08}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new HeaderSettings(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new HeaderSettings(searchFields);
+        }
+    }
     
     /// <summary>Represents the /sitecore/templates/Feature/PageContent/Site Settings template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.0")]
@@ -235,9 +446,9 @@ namespace Sitecore.Feature.PageContent.Models.Concrete {
         
         private Synthesis.FieldTypes.TextField _targetHostName;
         
-        private Synthesis.FieldTypes.ItemReferenceField _language1;
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _language1;
         
-        private Synthesis.FieldTypes.ItemReferenceField _loginPage;
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _loginPage;
         
         private Synthesis.FieldTypes.BooleanField _requireLogin;
         
@@ -317,10 +528,10 @@ namespace Sitecore.Feature.PageContent.Models.Concrete {
         
         /// <summary>Represents the Language field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("language")]
-        public Synthesis.FieldTypes.Interfaces.IItemReferenceField Language1 {
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField Language1 {
             get {
                 if (_language1 == null) {
-                    _language1 = new Synthesis.FieldTypes.ItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{370C2996-5C2A-4B25-B062-B8FCF575DD9D}"], "/sitecore/templates/Feature/PageContent/_Base Site Root", "Language"), this.GetSearchFieldValue("language"));
+                    _language1 = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{370C2996-5C2A-4B25-B062-B8FCF575DD9D}"], "/sitecore/templates/Feature/PageContent/_Base Site Root", "Language"), this.GetSearchFieldValue("language"));
                 }
                 return _language1;
             }
@@ -328,10 +539,10 @@ namespace Sitecore.Feature.PageContent.Models.Concrete {
         
         /// <summary>Represents the Login Page field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("login_page")]
-        public Synthesis.FieldTypes.Interfaces.IItemReferenceField LoginPage {
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField LoginPage {
             get {
                 if (_loginPage == null) {
-                    _loginPage = new Synthesis.FieldTypes.ItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{453EBC8B-F894-4F08-A348-20ECDE37F50F}"], "/sitecore/templates/Feature/PageContent/_Base Site Root", "Login Page"), this.GetSearchFieldValue("login_page"));
+                    _loginPage = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{453EBC8B-F894-4F08-A348-20ECDE37F50F}"], "/sitecore/templates/Feature/PageContent/_Base Site Root", "Login Page"), this.GetSearchFieldValue("login_page"));
                 }
                 return _loginPage;
             }

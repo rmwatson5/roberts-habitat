@@ -5,12 +5,9 @@ Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
 Path: /sitecore/layout/Renderings/Feature/Navigation/Language Toggle
 DB: master
 SharedFields:
-- ID: "2e51df70-d3e4-458c-b03a-95c734dd39e7"
+- ID: "5a14936f-2100-4541-b700-2f122e88f3f8"
   Hint: Data source
   Value: /sitecore/system/Languages
-- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
-  Hint: Path
-  Value: /Views/Navigation/LanguageToggle.cshtml
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: LanguageSwitcher

@@ -1,0 +1,14 @@
+﻿---
+ID: "e66ae3a4-0e86-47b9-ac32-5c17f36ea0a1"
+Parent: "086636a0-ae41-47bd-aa03-cf327d7d915f"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Feature/Media
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180922T230628Z

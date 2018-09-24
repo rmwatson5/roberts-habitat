@@ -36,7 +36,7 @@ namespace Sitecore.Foundation.DataAccess.Models {
         
         /// <summary>Represents the Tests field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("tests")]
-        Synthesis.FieldTypes.Interfaces.IPathItemReferenceField Tests {
+        Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField Tests {
             get;
         }
         
@@ -89,7 +89,7 @@ namespace Sitecore.Foundation.DataAccess.Models.Concrete {
         
         private Synthesis.FieldTypes.TextField _placeholder;
         
-        private Synthesis.FieldTypes.PathItemReferenceField _tests;
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _tests;
         
         private Synthesis.FieldTypes.TextField _dataSource;
         
@@ -159,10 +159,10 @@ namespace Sitecore.Foundation.DataAccess.Models.Concrete {
         
         /// <summary>Represents the Tests field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("tests")]
-        public Synthesis.FieldTypes.Interfaces.IPathItemReferenceField Tests {
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField Tests {
             get {
                 if (_tests == null) {
-                    _tests = new Synthesis.FieldTypes.PathItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{0FA4635B-8BF4-46DF-994D-621B76F0A7AD}"], "/sitecore/templates/Foundation/DataAccess/_Base Standard Rendering Parameters", "Tests"), this.GetSearchFieldValue("tests"));
+                    _tests = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{0FA4635B-8BF4-46DF-994D-621B76F0A7AD}"], "/sitecore/templates/Foundation/DataAccess/_Base Standard Rendering Parameters", "Tests"), this.GetSearchFieldValue("tests"));
                 }
                 return _tests;
             }

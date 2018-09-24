@@ -234,7 +234,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\Rainbow.config" />
-    <Content Include="App_Config\Include\Feature\Feature.Navigation.Serialization.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Navigation.Serialization.config" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.Mvc.config" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.Solr.Config" />
     <Content Include="App_Config\Include\Project\Project.Website.Serialization.config" />
@@ -245,24 +245,22 @@
     <Content Include="App_Config\Include\Feature\Feature.PageContent.config" />
     <Content Include="App_Config\Include\Feature\Feature.Accounts.Serialization.config" />
     <Content Include="App_Config\Include\Feature\Feature.Media.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Promotion.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Foundation.Navigation.Serialization.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\TeamCity.pubxml" />
     <Content Include="Views\Layouts\Default.cshtml" />
-    <Content Include="Views\Frames\HeaderTop.cshtml" />
     <Content Include="Views\Navigation\NavigationLinks.cshtml" />
-    <Content Include="Views\Frames\Navbar.cshtml" />
-    <Content Include="Views\Navigation\Logo.cshtml" />
-    <Content Include="Views\Navigation\NavigationMenu.cshtml" />
     <Content Include="Views\Navigation\LanguageSwitcher.cshtml" />
-    <Content Include="Views\Frames\NavbarActivity.cshtml" />
     <Content Include="Views\Accounts\Login.cshtml" />
     <Content Include="Views\Navigation\Search.cshtml" />
     <Content Include="Views\Media\Carousel.cshtml" />
-    <Content Include="Views\Frames\PageHeader.cshtml" />
-    <Content Include="Views\Navigation\ItemListing.cshtml" />
+    <Content Include="Views\Promotion\ItemListing.cshtml" />
+    <Content Include="Views\Scaffolding\Header.cshtml" />
+    <Content Include="Views\Scaffolding\Footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -272,6 +270,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Frames\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Feature\Accounts\code\Sitecore.Feature.Accounts.csproj">
@@ -282,13 +281,13 @@
       <Project>{83c50026-de64-4f79-b469-5834531a3639}</Project>
       <Name>Sitecore.Feature.Media</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Feature\Navigation\code\Sitecore.Feature.Navigation.csproj">
-      <Project>{69d1f520-5429-48ba-afc1-5e508eaeb31a}</Project>
-      <Name>Sitecore.Feature.Navigation</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Feature\PageContent\code\Sitecore.Feature.PageContent.csproj">
       <Project>{87451572-67ef-4bd4-8550-d9e6a367dd0b}</Project>
       <Name>Sitecore.Feature.PageContent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Feature\Promotion\code\Sitecore.Feature.Promotion.csproj">
+      <Project>{654b28be-4fed-4d30-837f-bff205746691}</Project>
+      <Name>Sitecore.Feature.Promotion</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\DataAccess\code\Sitecore.Foundation.DataAccess.csproj">
       <Project>{b8774fcb-4c23-432e-a90b-5d4704743ce4}</Project>
@@ -297,6 +296,10 @@
     <ProjectReference Include="..\..\..\Foundation\Helpers\code\Sitecore.Foundation.Helpers.csproj">
       <Project>{2f9f574b-a5ec-4d7e-b8b2-1d7353f58634}</Project>
       <Name>Sitecore.Foundation.Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Navigation\code\Sitecore.Foundation.Navigation.csproj">
+      <Project>{69d1f520-5429-48ba-afc1-5e508eaeb31a}</Project>
+      <Name>Sitecore.Foundation.Navigation</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Searchable\code\Sitecore.Foundation.Searchable.csproj">
       <Project>{f7014f4c-8ade-4832-ba62-73e22d5c285c}</Project>

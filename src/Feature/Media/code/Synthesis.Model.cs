@@ -24,7 +24,7 @@ namespace Sitecore.Feature.Media.Models {
         
         /// <summary>Represents the Active Slide field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("active_slide")]
-        Synthesis.FieldTypes.Interfaces.IItemReferenceField ActiveSlide {
+        Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField ActiveSlide {
             get;
         }
         
@@ -60,7 +60,7 @@ namespace Sitecore.Feature.Media.Models {
         
         /// <summary>Represents the Video field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("video")]
-        Synthesis.FieldTypes.Interfaces.IItemReferenceField Video {
+        Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField Video {
             get;
         }
     }
@@ -85,7 +85,7 @@ namespace Sitecore.Feature.Media.Models.Concrete {
         
         private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceListField _slides;
         
-        private Synthesis.FieldTypes.ItemReferenceField _activeSlide;
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _activeSlide;
         
         private Synthesis.FieldTypes.IntegerField _transitionSpeed;
         
@@ -131,10 +131,10 @@ namespace Sitecore.Feature.Media.Models.Concrete {
         
         /// <summary>Represents the Active Slide field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("active_slide")]
-        public Synthesis.FieldTypes.Interfaces.IItemReferenceField ActiveSlide {
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField ActiveSlide {
             get {
                 if (_activeSlide == null) {
-                    _activeSlide = new Synthesis.FieldTypes.ItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{91BCEC6A-706C-480B-9EFA-87AA5E7B4A1C}"], "/sitecore/templates/Feature/Media/Carousel Settings", "Active Slide"), this.GetSearchFieldValue("active_slide"));
+                    _activeSlide = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{91BCEC6A-706C-480B-9EFA-87AA5E7B4A1C}"], "/sitecore/templates/Feature/Media/Carousel Settings", "Active Slide"), this.GetSearchFieldValue("active_slide"));
                 }
                 return _activeSlide;
             }
@@ -180,7 +180,7 @@ namespace Sitecore.Feature.Media.Models.Concrete {
         
         private Synthesis.FieldTypes.ImageField _image;
         
-        private Synthesis.FieldTypes.ItemReferenceField _video;
+        private Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField _video;
         
         public CarouselSlide(Sitecore.Data.Items.Item innerItem) : 
                 base(innerItem) {
@@ -246,10 +246,10 @@ namespace Sitecore.Feature.Media.Models.Concrete {
         
         /// <summary>Represents the Video field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("video")]
-        public Synthesis.FieldTypes.Interfaces.IItemReferenceField Video {
+        public Sitecore.Foundation.DataAccess.FieldTypes.IHelixItemReferenceField Video {
             get {
                 if (_video == null) {
-                    _video = new Synthesis.FieldTypes.ItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{DB366C0D-B0A8-4516-8523-5002362A131C}"], "/sitecore/templates/Feature/Media/Carousel Slide", "Video"), this.GetSearchFieldValue("video"));
+                    _video = new Sitecore.Foundation.DataAccess.FieldTypes.HelixItemReferenceField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{DB366C0D-B0A8-4516-8523-5002362A131C}"], "/sitecore/templates/Feature/Media/Carousel Slide", "Video"), this.GetSearchFieldValue("video"));
                 }
                 return _video;
             }

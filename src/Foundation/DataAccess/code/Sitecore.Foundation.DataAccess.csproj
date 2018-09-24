@@ -94,7 +94,9 @@
     <Compile Include="Extensions\FieldExtensions.cs" />
     <Compile Include="Extensions\SitecoreExtensions.cs" />
     <Compile Include="FeatureModelRegistration.cs" />
+    <Compile Include="FieldTypes\HelixItemReferenceField.cs" />
     <Compile Include="FieldTypes\HelixItemReferenceListField.cs" />
+    <Compile Include="FieldTypes\IHelixItemReferenceField.cs" />
     <Compile Include="FieldTypes\IHelixItemReferenceListField.cs" />
     <Compile Include="FoundationModelRegistration.cs" />
     <Compile Include="HelixModelRegistration.cs" />

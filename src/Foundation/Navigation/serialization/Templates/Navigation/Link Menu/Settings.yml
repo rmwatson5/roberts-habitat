@@ -1,0 +1,18 @@
+﻿---
+ID: "cd784706-0763-4aca-b7a1-5c60aa3a3c7c"
+Parent: "a06ee689-428f-4227-a728-20c7fe49f53e"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/Navigation/Link Menu/Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180919T214727Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
